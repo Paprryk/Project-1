@@ -32,7 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+/* .homebody {
+  background: url("../public/homelogo.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 94vh;
+
+} */
