@@ -17,6 +17,7 @@ function App() {
       <Router>
         <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#e3f2fd"}} >
           <div><Link to='/buyers'>Buyers</Link>
+            <Link to='/sellers'>Sellers</Link>
             <Link to='/properties'>Properties</Link></div>
         </nav>
         <Routes> 
