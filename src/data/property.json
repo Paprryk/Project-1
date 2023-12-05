@@ -1,39 +1,85 @@
-    {
+
+{
         "buyers": [
             {
+                "id": 1,
                 "firstname": "Craig",
                 "lastname": "Morris"
             },
             {
+                "id": 2,
                 "firstname": "Patryk",
                 "lastname": "Flasz"
             },
             {
+                "id": 3,
                 "firstname": "Treesa",
                 "lastname": "Cherian"
             },
             {
+                "id": 4,
                 "firstname": "Sailesh",
                 "lastname": "Patel"
             }
         ],
         "sellers": [
             {
+                "id": 1,
                 "firstname": "Craig",
                 "lastname": "Morris"
             },
             {
+                "id": 2,
                 "firstname": "Patryk",
                 "lastname": "Flasz"
             },
             {
+                "id": 3,
                 "firstname": "Treesa",
                 "lastname": "Cherian"
             },
             {
+                "id": 4,
                 "firstname": "Sailesh",
                 "lastname": "Patel"
             }
         ],
-        "properties": []
+        "properties": [
+            {
+                "id": 1,
+                "status": "FOR SALE",
+                "address":"50 Hampton street",
+                "price":"£200,000",
+                "bedrooms": "5",
+                "bathroom":"2",
+                "garden":"20m2"
+            },
+            {
+                "id": 2,
+                "status":"SOLD",
+                "address":"29 Liverdale street",
+                "price":"£150,000",
+                "bedrooms": "4",
+                "bathroom":"1",
+                "garden":"10m2"
+            },
+            {
+                "id": 3,
+                "status":"WITHDRAWN",
+                "address":"10 Boyland road",
+                "price":"£100,000",
+                "bedrooms": "3",
+                "bathroom":"2",
+                "garden":"15m2"
+            },
+            {
+                "id": 4,
+                "status":"SOLD",
+                "address":"152 Harford street",
+                "price":"£250,000",
+                "bedrooms": "5",
+                "bathroom":"3",
+                "garden":"50m2"
+            }
+        ]
     }
