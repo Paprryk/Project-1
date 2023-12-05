@@ -1,5 +1,39 @@
 {
-    "buyers": [],
-    "sellers": [],
+    "buyers": [
+        {
+            "firstname": "Craig",
+            "lastname": "Morris"
+        },
+        {
+            "firstname": "Patryk",
+            "lastname": "Flasz"
+        },
+        {
+            "firstname": "Treesa",
+            "lastname": "Cherian"
+        },
+        {
+            "firstname": "Sailesh",
+            "lastname": "Patel"
+        }
+    ],
+    "sellers": [
+        {
+            "firstname": "Craig",
+            "lastname": "Morris"
+        },
+        {
+            "firstname": "Patryk",
+            "lastname": "Flasz"
+        },
+        {
+            "firstname": "Treesa",
+            "lastname": "Cherian"
+        },
+        {
+            "firstname": "Sailesh",
+            "lastname": "Patel"
+        }
+    ],
     "properties": []
 }
