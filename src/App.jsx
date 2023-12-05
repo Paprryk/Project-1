@@ -14,10 +14,14 @@ function App() {
   return (
     <div>
       <Router>
-        <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#e3f2fd"}} >
-          <div><Link to='/buyers'>Buyers</Link>
-            <Link to='/sellers'>Sellers</Link>
-            <Link to='/properties'>Properties</Link></div>
+        <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#e3f2fd",}} >
+          <div>
+           <Link to='/'><button>Home</button></Link>
+            <Link  to='/buyers'><button>Buyers</button></Link>
+            <Link to='/sellers'><button>Sellers</button></Link>
+            <Link to='/properties'><button>Properties</button></Link>
+            
+            </div>
         </nav>
         <Routes> 
           <Route path='/' element={<Home />} />
