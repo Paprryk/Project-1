@@ -49,37 +49,45 @@
                 "id": 1,
                 "status": "FOR SALE",
                 "address":"50 Hampton street",
+                "type": "Detached",
+                "city": "London",
                 "price":"£200,000",
                 "bedrooms": "5",
                 "bathroom":"2",
-                "garden":"20m2"
+                "garden":"No"
             },
             {
                 "id": 2,
                 "status":"SOLD",
                 "address":"29 Liverdale street",
+                "type": "End Terrace",
+                "city": "Leeds",
                 "price":"£150,000",
                 "bedrooms": "4",
                 "bathroom":"1",
-                "garden":"10m2"
+                "garden":"Yes"
             },
             {
                 "id": 3,
                 "status":"WITHDRAWN",
                 "address":"10 Boyland road",
+                "type": "Terraced",
+                "city": "Manchester",
                 "price":"£100,000",
                 "bedrooms": "3",
                 "bathroom":"2",
-                "garden":"15m2"
+                "garden":"No"
             },
             {
                 "id": 4,
                 "status":"SOLD",
                 "address":"152 Harford street",
+                "type": "Semi-Detached",
+                "city": "Birmingham",
                 "price":"£250,000",
                 "bedrooms": "5",
                 "bathroom":"3",
-                "garden":"50m2"
+                "garden":"Yes"
             }
         ]
     }

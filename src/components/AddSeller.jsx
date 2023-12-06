@@ -16,7 +16,7 @@ function AddSeller() {
             .catch(err => console.error(err))
     }}>
         <label htmlFor="firstname" className="form-label">First Name</label>
-        <input
+        <input size="50"
             id="firstname"
             firstname="name"
             className="form-control"
