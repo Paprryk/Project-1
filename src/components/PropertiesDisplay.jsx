@@ -5,13 +5,16 @@ import { useState, useEffect } from "react";
 
 
 function PropertiesDisplay() {
+
     const [filterAdd, setFilterAdd] = useState("")
     const [filterCity, setFilterCity] = useState("")
     const [filterType, setFilterType] = useState("")
-    const [filterPrice, setFilterPrice] = useState("")
+    const [filterMinPrice, setFilterMinPrice] = useState("")
+    const [filterMaxPrice, setFilterMaxPrice] = useState("")
     const [filterGarden, setFilterGarden] = useState("")
     const [filterBedroom, setFilterBedroom] = useState("")
     const [filterBathroom, setFilterBathroom] = useState("")
+
     function getProperties() {
         axios.get("http://localhost:3000/properties")
             .then((response) => { setProperties(response.data) })
@@ -25,11 +28,12 @@ function PropertiesDisplay() {
     const propertyList = []
 
     for (const property of properties) {
-        console.log("Properties:", property);
+        // console.log("Properties:", property);
         if (filterAdd && !property.address.toLowerCase().includes(filterAdd.toLowerCase())) continue;
         if (filterCity && !property.city.toLowerCase().includes(filterCity.toLowerCase())) continue;
         if (filterType !== "" && !property.type.toLowerCase().includes(filterType.toLowerCase())) continue;
-        if (filterPrice !== "" && !property.price.toLowerCase().includes(filterPrice.toLowerCase())) continue;
+        if (filterMinPrice && filterMinPrice > property.price) continue;
+        if (filterMaxPrice && filterMaxPrice < property.price) continue;
         if (filterBathroom > property.bathroom) continue;
         if (filterBedroom > property.bedrooms) continue;
         if (filterGarden && filterGarden !== property.garden) continue;
@@ -61,10 +65,14 @@ function PropertiesDisplay() {
 
     }
 
-    function handleChangePrice(event) {
-        setFilterPrice(event.target.value);
+    // function handleChangeMinPrice(event) {
+    //     setFilterMinPrice(event.target.value);
 
-    }
+    // }
+    // function handleChangeMaxPrice(event) {
+    //     setFilterMaxPrice(event.target.value);
+
+    // }
 
     function handleChangeBedroom(event) {
         setFilterBedroom(event.target.value);
@@ -93,9 +101,9 @@ function PropertiesDisplay() {
             <br /><label>Min. Bathroom</label><br />
             <input name="property.bathroom" type="text" value={filterBathroom} onChange={handleChangeBathroom} />
             <br /><label>Min Price</label><br />
-            <input name="property.price" type="text" min="0" max="" value={filterPrice} onChange={handleChangePrice} />
+            <input type="" value={filterMinPrice || ""} onChange={e => setFilterMinPrice(e.target.value)} />
             <br /><label>Max Price</label><br />
-            <input name="property.price" type="text" min="" max="300,000" value={filterPrice} onChange={handleChangePrice} />
+            <input type="" value={filterMaxPrice || ""} onChange={e => setFilterMaxPrice(e.target.value)} />
             <br /><label>Garden</label><br />
             <select name="property.garden" onChange={handleChangeGarden}>
                 <option selected value={""}></option>

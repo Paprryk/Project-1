@@ -6,7 +6,7 @@ function PropertiesStructure(props) {
         <div className="d-inline-flex " style={{ maxWidth: "20%", margin: "20px" }}>
             <div className="card">
                 <div className="card-body">
-                    <h4>{props.price}</h4><br />
+                    <h4>£{props.price}</h4><br />
                     <img id="House" src="https://i.pinimg.com/originals/9b/4d/14/9b4d148831ad70562521bdff39cbec5f.jpg" width={"60%"}></img>
                     <div className="card-text">
                         <br/>Address: {props.address}<br/>
@@ -26,7 +26,7 @@ PropertiesStructure.propTypes = {
     city: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
     bedrooms: PropTypes.string.isRequired,
     bathroom: PropTypes.string.isRequired,
     garden: PropTypes.string.isRequired
