@@ -32,7 +32,7 @@ function PropertiesDisplay() {
         if (filterPrice !== "" && !property.price.toLowerCase().includes(filterPrice.toLowerCase())) continue;
         if (filterBathroom > property.bathroom) continue;
         if (filterBedroom > property.bedrooms) continue;
-        if (filterGarden && filterGarden !== property.garden)continue;
+        if (filterGarden && filterGarden !== property.garden) continue;
 
         propertyList.push(
             <PropertiesStructure
@@ -92,9 +92,9 @@ function PropertiesDisplay() {
             <input name="property.bedroom" type="text" value={filterBedroom} onChange={handleChangeBedroom} />
             <br /><label>Min. Bathroom</label><br />
             <input name="property.bathroom" type="text" value={filterBathroom} onChange={handleChangeBathroom} />
-            <br /><label>Min Price</label><br/>
+            <br /><label>Min Price</label><br />
             <input name="property.price" type="text" min="0" max="" value={filterPrice} onChange={handleChangePrice} />
-            <br/><label>Max Price</label><br/>
+            <br /><label>Max Price</label><br />
             <input name="property.price" type="text" min="" max="300,000" value={filterPrice} onChange={handleChangePrice} />
             <br /><label>Garden</label><br />
             <select name="property.garden" onChange={handleChangeGarden}>
@@ -102,7 +102,6 @@ function PropertiesDisplay() {
                 <option value={"Yes"}> Yes</option>
                 <option value={"No"}>No</option>
             </select>
-            {/* <input name="property.garden" type="" value={filterGarden} onChange={{e => {setFilterGarden(e.target.value)}{handleChangeGarden}}} /> */}
             <p>{propertyList}</p>
         </div>
     )
