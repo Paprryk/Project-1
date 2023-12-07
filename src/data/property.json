@@ -24,6 +24,26 @@
       "firstname": "Jordan",
       "lastname": "Harrison",
       "id": 5
+    },
+    {
+      "firstname": "Alex",
+      "lastname": "Henderson",
+      "id": 6
+    },
+    {
+      "firstname": "Mark",
+      "lastname": "Morrison",
+      "id": 7
+    },
+    {
+      "firstname": "Andrew",
+      "lastname": "McCall",
+      "id": 8
+    },
+    {
+      "firstname": "John",
+      "lastname": "Smith",
+      "id": 9
     }
   ],
   "sellers": [
@@ -46,12 +66,17 @@
       "id": 4,
       "firstname": "Sailesh",
       "lastname": "Patel"
+    },
+    {
+      "firstname": "Jordan",
+      "lastname": "Harrison",
+      "id": 5
     }
   ],
   "properties": [
     {
       "id": 1,
-      "status": "FOR SALE",
+      "status": "SOLD",
       "address": "50 Hampton street",
       "type": "Detached",
       "city": "London",
@@ -62,7 +87,7 @@
     },
     {
       "id": 2,
-      "status": "SOLD",
+      "status": "For Sale",
       "address": "29 Liverdale street",
       "type": "End Terrace",
       "city": "Leeds",
@@ -73,7 +98,7 @@
     },
     {
       "id": 3,
-      "status": "WITHDRAWN",
+      "status": "For Sale",
       "address": "10 Boyland road",
       "type": "Terraced",
       "city": "Manchester",
@@ -84,7 +109,7 @@
     },
     {
       "id": 4,
-      "status": "SOLD",
+      "status": "For Sale",
       "address": "152 Harford street",
       "type": "Semi-Detached",
       "city": "Birmingham",
@@ -97,21 +122,45 @@
       "address": "Luttrell Road, Four Oaks Estate",
       "type": "Detached",
       "city": "Sutton Coldfield",
-      "price": "3500000",
+      "price": 3500000,
       "bedrooms": "7",
       "bathroom": "6",
       "garden": "Yes",
+      "status": "For Sale",
       "id": 5
     },
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
       "type": "Detached",
       "city": "Nottingham",
-      "price": "493995",
+      "price": 493995,
       "bedrooms": "4",
       "bathroom": "3",
       "garden": "Yes",
+      "status": "SOLD",
       "id": 6
+    },
+    {
+      "address": "Yarnells Hill",
+      "type": "Detached",
+      "city": "Oxford",
+      "price": "2595000",
+      "bedrooms": "5",
+      "bathroom": "4",
+      "garden": "Yes",
+      "id": 7,
+      "status": "For Sale"
+    },
+    {
+      "address": "Berry Croft",
+      "type": "Semi-Detached",
+      "city": "Abingdon",
+      "price": "385000",
+      "bedrooms": "3",
+      "bathroom": "1",
+      "garden": "Yes",
+      "id": 8,
+      "status": "For Sale"
     }
   ]
 }
