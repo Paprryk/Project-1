@@ -7,7 +7,7 @@ function RegBuyer() {
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
 
-
+    
 
     return (
 
@@ -25,7 +25,7 @@ function RegBuyer() {
                 
                 )
                 .catch(err => console.error(err))
-        }}>
+        } } >
 
             <label htmlFor="firstName">FirstName</label>
             <input
@@ -49,7 +49,7 @@ function RegBuyer() {
             />
 
             <div>
-                <button type="submit">
+                <button type="submit" >
                     Submit
                 </button>
                 

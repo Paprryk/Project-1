@@ -24,6 +24,26 @@
       "firstname": "Jordan",
       "lastname": "Harrison",
       "id": 5
+    },
+    {
+      "firstname": "Samuel",
+      "lastname": "Jacob",
+      "id": 6
+    },
+    {
+      "firstname": "Jacob",
+      "lastname": "Apren",
+      "id": 7
+    },
+    {
+      "firstname": "John",
+      "lastname": "Smith",
+      "id": 8
+    },
+    {
+      "firstname": "Jon",
+      "lastname": "Anderson",
+      "id": 9
     }
   ],
   "sellers": [
@@ -95,9 +115,10 @@
     },
     {
       "address": "Luttrell Road, Four Oaks Estate",
+      "status": "SOLD",
       "type": "Detached",
       "city": "Sutton Coldfield",
-      "price": "3500000",
+      "price": 3500000,
       "bedrooms": "7",
       "bathroom": "6",
       "garden": "Yes",
@@ -105,13 +126,69 @@
     },
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
+      "status": "For Sale",
       "type": "Detached",
       "city": "Nottingham",
-      "price": "493995",
+      "price": 493995,
       "bedrooms": "4",
       "bathroom": "3",
       "garden": "Yes",
       "id": 6
+    },
+    {
+      "address": "11 Fintry Ave",
+      "type": "Terraced",
+      "city": "Livingston",
+      "price": "140000",
+      "bedrooms": "3",
+      "bathroom": "1",
+      "garden": "Yes",
+      "status": "For Sale",
+      "id": 7
+    },
+    {
+      "address": "101 Huntly Ave",
+      "type": "Terraced",
+      "city": "Livingston",
+      "price": "140000",
+      "bedrooms": "3",
+      "bathroom": "2",
+      "garden": "Yes",
+      "status": "Sold",
+      "id": 8
+    },
+    {
+      "address": "26",
+      "type": "Cypress Glade",
+      "city": "Livingston",
+      "price": "350000",
+      "bedrooms": "4",
+      "bathroom": "3",
+      "garden": "Yes",
+      "status": "For Sale",
+      "id": 9
+    },
+    {
+      "address": "19 cypress glade",
+      "type": "Detached",
+      "city": "Livingston",
+      "price": "350000",
+      "bedrooms": "4",
+      "bathroom": "3",
+      "garden": "Yes",
+      "status": "For Sale",
+      "id": 10
+    },
+    {
+      "address": "20 Cypress",
+      "type": "Detached",
+      "city": "Livingston",
+      "price": "400000",
+      "bedrooms": "4",
+      "bathroom": "3",
+      "garden": "Yes",
+      "status": "For Sale",
+      "id": 11
     }
   ]
 }

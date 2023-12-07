@@ -48,6 +48,7 @@ function PropertiesDisplay() {
                 bedrooms={property.bedrooms}
                 bathroom={property.bathroom}
                 garden={property.garden}
+                status={property.status}
 
             />
         )

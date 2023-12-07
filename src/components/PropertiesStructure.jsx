@@ -1,7 +1,11 @@
 import PropTypes from "prop-types";
 import 'bootstrap/dist/css/bootstrap.css';
+// import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function PropertiesStructure(props) {
+
+    const [status, setStatus] = useState("")
     return (
         <div className="d-inline-flex " style={{ maxWidth: "20%", margin: "20px" }}>
             <div className="card">
@@ -15,12 +19,13 @@ function PropertiesStructure(props) {
                         Bedrooms: {props.bedrooms}<br />
                         Bathroom: {props.bathroom}<br />
                         Garden: {props.garden}<br />
-                        <label>Status :</label>
-                        <select >
-                            <option selected style={{ color: "green"}}value={"For Sale"}>For Sale</option>
+                        {/* <label>Status :</label> */}
+                        {/* <select onSelect={e => setStatus(e.target.value) } >
+                            <option  style={{ color: "green"}}value={"For Sale"}>For Sale</option>
                             <option style={{ color: "orange"}}value={"Sold"}> Sold</option>
                             <option style={{ color: "red"}}value={"Withdrawn"}>Withdrawn</option>
-                        </select>
+                        </select> */}
+                        Status:{props.status}
                     </div>
                 </div>
             </div>
@@ -35,7 +40,8 @@ PropertiesStructure.propTypes = {
     price: PropTypes.number.isRequired,
     bedrooms: PropTypes.string.isRequired,
     bathroom: PropTypes.string.isRequired,
-    garden: PropTypes.string.isRequired
+    garden: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired
 }
 
 export default PropertiesStructure;

@@ -10,10 +10,13 @@ function AddProperty() {
     const [bathroom, setBathroom] = useState("");
     const [garden, setGarden] = useState("");
     const [picture, setPicture] = useState("");
-
+    const [status, setStatus] = useState("");
+    
+    
     return (<form onSubmit={e => {
+       
         e.preventDefault()
-        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden})
+        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden,status})
             .then(response => {
                 setAddress("");
                 setType("");
@@ -23,9 +26,12 @@ function AddProperty() {
                 setBathroom("");
                 setGarden("");
                 setPicture("");
+                setStatus("")
 
-            })
+            }) 
+            
             .catch(err => console.error(err))
+            
     }}>
         <label htmlFor="address" className="form-label">Address</label>
         <input size="50"
@@ -103,10 +109,24 @@ function AddProperty() {
             required
         />
 
+{/* Added by TC */}
 
+
+<label htmlFor="status" className="form-label">Status</label>
+        
+          
+            <select onChange={e => setStatus(e.target.value)}   >
+                       <option selected value={""} onChange={e => setStatus(e.target.value)} ></option>
+                            <option  style={{ color: "green"}}value={"For Sale"} onChange={e => setStatus(e.target.value)} >For Sale</option>
+                            <option style={{ color: "orange"}}value={"Sold"} onChange={e => setStatus(e.target.value)} > Sold</option>
+                            <option style={{ color: "red"}}value={"Withdrawn"} onChange={e => setStatus(e.target.value)} >Withdrawn</option>
+                         
+                        </select>
+                                
+       
         
         <div className="mt-2">
-            <button className="btn btn-success" type="submit">Submit</button>
+            <button className="btn btn-success" type="submit" >Submit</button>
         </div>
 
 
