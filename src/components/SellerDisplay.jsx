@@ -30,9 +30,9 @@ function SellerDisplay() {
 
     useEffect(() => {
    
-        setInterval(() => {
-            getSellers()
-        }, 2000)
+        // setInterval(() => {
+        //     getSellers()
+        // }, 2000)
 
         getSellers();
     }, [])

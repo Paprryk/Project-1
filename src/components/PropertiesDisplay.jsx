@@ -104,9 +104,9 @@ console.log("Property:", property)
 
     useEffect(() => {
    
-        setInterval(() => {
-            getProperties()
-        }, 2000)
+        // setInterval(() => {
+        //     getProperties()
+        // }, 2000)
 
         getProperties();
     }, [])

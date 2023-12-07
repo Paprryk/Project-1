@@ -76,7 +76,7 @@
   "properties": [
     {
       "id": 1,
-      "status": "SOLD",
+      "status": "For Sale",
       "address": "50 Hampton street",
       "type": "Detached",
       "city": "London",
@@ -87,7 +87,7 @@
     },
     {
       "id": 2,
-      "status": "For Sale",
+      "status": "SOLD",
       "address": "29 Liverdale street",
       "type": "End Terrace",
       "city": "Leeds",
@@ -161,6 +161,17 @@
       "garden": "Yes",
       "id": 8,
       "status": "For Sale"
+    },
+    {
+      "address": "Ellerslie Grove, Sandiacre",
+      "type": "Bungalow",
+      "city": "Nottingham",
+      "price": "350000",
+      "bedrooms": "3",
+      "bathroom": "1",
+      "garden": "No",
+      "status": "Withdrawn",
+      "id": 9
     }
   ]
 }

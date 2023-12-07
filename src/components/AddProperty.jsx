@@ -14,7 +14,7 @@ function AddProperty() {
 
     return (<form onSubmit={e => {
         e.preventDefault()
-        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden})
+        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden, status})
             .then(response => {
                 setAddress("");
                 setType("");
