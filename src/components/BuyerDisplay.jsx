@@ -36,9 +36,9 @@ function BuyerDisplay() {
 
         useEffect(() => {
    
-            setInterval(() => {
-                getBuyers()
-            }, 2000)
+            // setInterval(() => {
+            //     getBuyers()
+            // }, 2000)
     
             getBuyers();
         }, [])

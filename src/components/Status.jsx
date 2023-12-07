@@ -18,9 +18,9 @@ function Status(props) {
     return (
         <div>
 
-            <input type="text" readOnly value={status} />
+            {/* <input type="text" readOnly value={status} /> */}
             <br />
-            <button onClick={e => {
+            <button className="btn btn-success" type="submit" onClick={e => {
                 e.preventDefault()
 
                 axios.patch("http://localhost:3000/properties/" + props.id, { status: "For Sale" })
@@ -31,9 +31,9 @@ function Status(props) {
             }}>
 
                 For Sale
-            </button>;
+            </button>
 
-            <button onClick={e => {
+            <button className="btn btn-success" type="submit" onClick={e => {
                 e.preventDefault()
                 axios.patch("http://localhost:3000/properties/" + props.id, { status: "SOLD" })
                     .then(response => {
@@ -43,9 +43,9 @@ function Status(props) {
             }}>
 
                 SOLD
-            </button>;
+            </button>
 
-            <button onClick={e => {
+            <button className="btn btn-success" type="submit" onClick={e => {
                 e.preventDefault()
                 axios.patch("http://localhost:3000/properties/" + props.id, { status: "Withdrawn" })
                     .then(response => {
@@ -55,9 +55,9 @@ function Status(props) {
             }}>
 
                 Withdrawn
-            </button>;
+            </button>
 
-            <button onClick={e => {
+            <button className="btn btn-success" type="submit" onClick={e => {
                 e.preventDefault()
                 axios.patch("http://localhost:3000/properties/" + props.id, { status: "Re-Submit" })
                     .then(response => {
@@ -67,7 +67,7 @@ function Status(props) {
             }}>
 
                 Re-Submit
-            </button>;
+            </button>
         </div>
     );
 }
