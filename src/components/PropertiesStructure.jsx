@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import 'bootstrap/dist/css/bootstrap.css';
+import Status from "./Status";
 
 function PropertiesStructure(props) {
     return (
@@ -15,12 +16,11 @@ function PropertiesStructure(props) {
                         Bedrooms: {props.bedrooms}<br />
                         Bathroom: {props.bathroom}<br />
                         Garden: {props.garden}<br />
-                        <label>Status :</label>
-                        <select >
-                            <option selected style={{ color: "green"}}value={"For Sale"}>For Sale</option>
-                            <option style={{ color: "orange"}}value={"Sold"}> Sold</option>
-                            <option style={{ color: "red"}}value={"Withdrawn"}>Withdrawn</option>
-                        </select>
+                        Status: {props.status}<br />
+                         <br></br>
+
+                        <Status id={props.id}/> 
+
                     </div>
                 </div>
             </div>
@@ -35,7 +35,9 @@ PropertiesStructure.propTypes = {
     price: PropTypes.number.isRequired,
     bedrooms: PropTypes.string.isRequired,
     bathroom: PropTypes.string.isRequired,
-    garden: PropTypes.string.isRequired
+    garden: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired
 }
 
 export default PropertiesStructure;
