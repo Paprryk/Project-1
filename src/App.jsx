@@ -30,9 +30,13 @@ function App() {
           <Route path='/properties' element={<Properties />} />
         </Routes>
       </Router>
-      
+<div>
+  {}
+</div>
 
-    </div>
+          </div>
+
+
 
   );
 }

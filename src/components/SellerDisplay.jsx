@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from "react"
 import Seller from "./SellerFilter"
 
+
 function SellerDisplay() {
 
     function getSellers() {
