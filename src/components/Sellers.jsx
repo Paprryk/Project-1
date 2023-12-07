@@ -9,7 +9,7 @@ function Sellers() {
             <h3>Sellers</h3>
             <AddSeller />
             <SellerDisplay />
-        </div>);
+        </div>)
 }
 
 

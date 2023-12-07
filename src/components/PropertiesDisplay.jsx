@@ -109,8 +109,8 @@ function PropertiesDisplay() {
                 <option selected value={""}></option>
                 <option value={"Yes"}> Yes</option>
                 <option value={"No"}>No</option>
-            </select>
-            <p>{propertyList}</p>
+            </select> 
+             <p>{propertyList}</p>
         </div>
     )
 

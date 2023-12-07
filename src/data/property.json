@@ -92,6 +92,26 @@
       "bedrooms": "5",
       "bathroom": "3",
       "garden": "Yes"
+    },
+    {
+      "address": "Luttrell Road, Four Oaks Estate",
+      "type": "Detached",
+      "city": "Sutton Coldfield",
+      "price": "3500000",
+      "bedrooms": "7",
+      "bathroom": "6",
+      "garden": "Yes",
+      "id": 5
+    },
+    {
+      "address": "Holden at Dunsmore Avenue, Bingham",
+      "type": "Detached",
+      "city": "Nottingham",
+      "price": "493995",
+      "bedrooms": "4",
+      "bathroom": "3",
+      "garden": "Yes",
+      "id": 6
     }
   ]
 }
