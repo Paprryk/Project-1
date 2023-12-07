@@ -38,10 +38,13 @@
   }
 }
 
-/* .homebody {
+
+/***********Styles added by TC**********/
+.homebody {
   background: url("../public/homelogo.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   height: 94vh;
 
-} */
+}
+
