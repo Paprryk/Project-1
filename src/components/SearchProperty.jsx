@@ -1,10 +1,13 @@
 import PropertiesStructure from "./PropertiesStructure";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import PropertiesDisplay from './PropertiesDisplay';
+import propertyList from './PropertiesDisplay';
 
 
 
-function PropertiesDisplay() {
+
+function SearchProperty() {
 
     const [filterAdd, setFilterAdd] = useState("")
     const [filterCity, setFilterCity] = useState("")
@@ -18,18 +21,17 @@ function PropertiesDisplay() {
 
     function getProperties() {
         axios.get("http://localhost:3000/properties")
-            .then((response) => { setProperties(response.data) })
-            .catch(console.log)
+         .then((response) => { setProperties(response.data) })
+         .catch(console.log)
     }
 
-    useEffect(() => { getProperties() }, []) //makes sure getbuyers is triggered once
+    useEffect(() => { getProperties() }, [])
 
     const [properties, setProperties] = useState([])
 
     const propertyList = []
 
     for (const property of properties) {
-        // console.log("Properties:", property);
         if (filterAdd && !property.address.toLowerCase().includes(filterAdd.toLowerCase())) continue;
         if (filterCity && !property.city.toLowerCase().includes(filterCity.toLowerCase())) continue;
         if (filterType !== "" && !property.type.toLowerCase().includes(filterType.toLowerCase())) continue;
@@ -38,8 +40,8 @@ function PropertiesDisplay() {
         if (filterBathroom > property.bathroom) continue;
         if (filterBedroom > property.bedrooms) continue;
         if (filterGarden && filterGarden !== property.garden) continue;
-        // if (filterStatus == property.status) continue;
-console.log("Property:", property)
+  // if (filterStatus == property.status) continue;
+
         propertyList.push(
             <PropertiesStructure
                 key={property.address}
@@ -69,14 +71,7 @@ console.log("Property:", property)
 
     }
 
-    // function handleChangeMinPrice(event) {
-    //     setFilterMinPrice(event.target.value);
 
-    // }
-    // function handleChangeMaxPrice(event) {
-    //     setFilterMaxPrice(event.target.value);
-
-    // }
 
     function handleChangeBedroom(event) {
         setFilterBedroom(event.target.value);
@@ -88,11 +83,6 @@ console.log("Property:", property)
 
     }
 
-    // function handleChangeStatus(event) {
-    //     setFilterStatus(event.target.value);
-
-    // }
-
     function handleChangeGarden(event) {
         setFilterGarden(event.target.value);
 
@@ -100,29 +90,11 @@ console.log("Property:", property)
 
 
 
+    // function handleChangeStatus(event) {
+    //     setFilterStatus(event.target.value);
 
+    // }
 
-    useEffect(() => {
-   
-        setInterval(() => {
-            getProperties()
-        }, 2000)
-
-        getProperties();
-    }, [])
-
-
-    function getProperties(){
-        axios.get("http://localhost:3000/properties").then((res) => setProperties(res.data)).catch(console.log)
-    }
-
-
-
-
-
-
-
-    
     return (
         <div>
             <label>Address</label><br />
@@ -144,12 +116,17 @@ console.log("Property:", property)
                 <option selected value={""}></option>
                 <option value={"Yes"}> Yes</option>
                 <option value={"No"}>No</option>
-            </select> 
-            {/* <input name="property.status" type="text" value={filterAdd} onChange={handleChangeStatus} />
-            <br /><label>Status</label><br /> */}
-             <p>{propertyList}</p>
+            </select>
+            <p>{propertyList}</p>
+
+
+            
         </div>
+
+
+
+
     )
 
 }
-export default PropertiesDisplay;
+export default SearchProperty;
