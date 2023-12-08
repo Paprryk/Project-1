@@ -4,6 +4,7 @@ import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function Home() {
     return (
+
         <div><br /><br />
             <h5 style={{ align: "center", color: "#0a69ca" }}>A wonderful estate agent database create by "Scrum and Scrummer"</h5>
             <br /><br /><div className="location"></div>
@@ -11,6 +12,8 @@ function Home() {
                 <p alt="Find us here!">Find us Here</p>
                 </a>
                
+
+        
         </div>
     );
 

@@ -44,6 +44,8 @@
       "firstname": "John",
       "lastname": "Smith",
       "id": 9
+
+
     }
   ],
   "sellers": [
@@ -120,6 +122,7 @@
     },
     {
       "address": "Luttrell Road, Four Oaks Estate",
+      "status": "SOLD",
       "type": "Detached",
       "city": "Sutton Coldfield",
       "price": 3500000,
@@ -131,6 +134,7 @@
     },
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
+      "status": "For Sale",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,

@@ -27,6 +27,7 @@ function AddSeller() {
         />
         <label htmlFor="lastname" className="form-label">Last Name</label>
         <input
+        
             id="lastname"
             lastname="name"
             className="form-control"

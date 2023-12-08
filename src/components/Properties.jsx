@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col';
 
 
 
+
 function Properties() {
   return (
     <div>
@@ -16,7 +17,9 @@ function Properties() {
       <AddProperty />
 
       <h4>Search Property</h4>
+
     <PropertiesDisplay/>
+
 
 
   
