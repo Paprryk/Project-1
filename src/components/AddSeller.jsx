@@ -37,7 +37,7 @@ function AddSeller() {
             required
         />
         <div className="mt-2">
-            <button className="btn btn-success" type="submit">Submit</button>
+            <button className="btn btn-primary" type="submit">Submit</button>
         </div>
     </form>);
 }

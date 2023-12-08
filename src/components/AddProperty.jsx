@@ -18,9 +18,14 @@ function AddProperty() {
        
         e.preventDefault()
 
+<<<<<<< HEAD
         axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden,status})
 
         
+=======
+        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden, status})
+
+>>>>>>> 6c2550a389a89d05885b75aa95142608d9f3c838
             .then(response => {
                 setAddress("");
                 setType("");
@@ -154,7 +159,9 @@ function AddProperty() {
        
         
         <div className="mt-2">
-            <button className="btn btn-success" type="submit" >Submit</button>
+
+            <button className="btn btn-primary" type="submit">Submit</button>
+
         </div>
 
 

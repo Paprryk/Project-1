@@ -1,6 +1,13 @@
 import PropTypes from "prop-types";
 import 'bootstrap/dist/css/bootstrap.css';
+<<<<<<< HEAD
 import { useState, useEffect } from "react";
+=======
+
+
+import { useState, useEffect } from "react";
+
+>>>>>>> 6c2550a389a89d05885b75aa95142608d9f3c838
 import Status from "./Status";
 
 
@@ -21,6 +28,17 @@ function PropertiesStructure(props) {
                         Bathroom: {props.bathroom}<br />
                         Garden: {props.garden}<br />
 
+<<<<<<< HEAD
+=======
+                        {/* <label>Status :</label> */}
+                        {/* <select onSelect={e => setStatus(e.target.value) } >
+                            <option  style={{ color: "green"}}value={"For Sale"}>For Sale</option>
+                            <option style={{ color: "orange"}}value={"Sold"}> Sold</option>
+                            <option style={{ color: "red"}}value={"Withdrawn"}>Withdrawn</option>
+                        </select> */}
+                        Status:{props.status}
+
+>>>>>>> 6c2550a389a89d05885b75aa95142608d9f3c838
                         Status: {props.status}<br />
                          <br></br>
 
@@ -46,6 +64,13 @@ PropertiesStructure.propTypes = {
     status: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired
 
+<<<<<<< HEAD
+=======
+
+    status: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired
+
+>>>>>>> 6c2550a389a89d05885b75aa95142608d9f3c838
 }
 
 export default PropertiesStructure;
