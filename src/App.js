@@ -17,6 +17,13 @@ function App() {
       <Router>
         <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#e3f2fd",}} >
           <div>
+          <section>
+          <a href="https://www.w3schools.com">
+          <img style={{
+             padding: "5px", 
+            width: "auto"
+          } }src="sAndS.png" alt="Paris"></img>
+          </a></section>
            <Link to='/'><button type="button" className="btn btn-success" style={{margin:"10px"}}>Home</button></Link>
             <Link  to='/buyers'><button type="button" className="btn btn-success" style={{margin:"10px"}}>Buyers</button></Link>
             <Link to='/sellers'><button type="button" className="btn btn-success" style={{margin:"10px"}}>Sellers</button></Link>
