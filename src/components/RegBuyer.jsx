@@ -7,39 +7,30 @@ function RegBuyer() {
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
 
-    
-
     return (
 
         <form onSubmit={e => {
             e.preventDefault();
             axios.post("http://localhost:3000/buyers",
-                { firstname, lastname })
-                
+                { firstname, lastname })                
                 .then(response => {
                     console.log(response);
                     setFirstname("");
                     setLastname("");
-
-                }
-                
-                )
-                .catch(err => console.error(err))
-        } } >
-
-            <label htmlFor="firstName">FirstName</label>
-            <input
+                }).catch(err => console.error(err))
+        }}>
+<div class="border border-primary p-2 mb-2 border-4" style={{backgroundColor: "#e3f2fd", width: "80%"}}>
+            <label htmlFor="firstName">First Name</label>
+            <br/><input
                 id="firstName"
                 firstname="firstname"
                 type="text"
                 value={firstname}
                 onChange={e => setFirstname(e.target.value)}
-                required
-                
+                required                
             />
-
-            <label htmlFor="lastName">LastName</label>
-            <input
+            <br/><label htmlFor="lastName">Last Name</label>
+            <br/><input
                 id="lastName"
                 lastname="lastname"
                 type="text"
@@ -47,11 +38,10 @@ function RegBuyer() {
                 onChange={e => setLastname(e.target.value)}
                 required
             />
-
             <div>
-
-            <button className="btn btn-primary" type="submit">Submit</button>
-
+                <br/><button type="submit">
+                    Submit
+                </button></div>
                 
             </div>
 
