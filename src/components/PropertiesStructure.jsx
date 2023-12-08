@@ -56,11 +56,6 @@ PropertiesStructure.propTypes = {
 
     status: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired
-
-
-    status: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired
-
 }
 
 export default PropertiesStructure;
