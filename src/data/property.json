@@ -44,26 +44,8 @@
       "firstname": "John",
       "lastname": "Smith",
       "id": 9
-    },
-    {
-      "firstname": "Samuel",
-      "lastname": "Jacob",
-      "id": 6
-    },
-    {
-      "firstname": "Jacob",
-      "lastname": "Apren",
-      "id": 7
-    },
-    {
-      "firstname": "John",
-      "lastname": "Smith",
-      "id": 8
-    },
-    {
-      "firstname": "Jon",
-      "lastname": "Anderson",
-      "id": 9
+
+
     }
   ],
   "sellers": [
@@ -161,6 +143,39 @@
       "garden": "Yes",
       "status": "Re-Submit",
       "id": 6
+    },
+    {
+      "address": "Yarnells Hill",
+      "type": "Detached",
+      "city": "Oxford",
+      "price": "2595000",
+      "bedrooms": "5",
+      "bathroom": "4",
+      "garden": "Yes",
+      "id": 7,
+      "status": "For Sale"
+    },
+    {
+      "address": "Berry Croft",
+      "type": "Semi-Detached",
+      "city": "Abingdon",
+      "price": "385000",
+      "bedrooms": "3",
+      "bathroom": "1",
+      "garden": "Yes",
+      "id": 8,
+      "status": "For Sale"
+    },
+    {
+      "address": "Ellerslie Grove, Sandiacre",
+      "type": "Bungalow",
+      "city": "Nottingham",
+      "price": "350000",
+      "bedrooms": "3",
+      "bathroom": "1",
+      "garden": "No",
+      "status": "Withdrawn",
+      "id": 9
     }
   ]
 }

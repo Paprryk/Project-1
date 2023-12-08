@@ -5,10 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-<<<<<<< HEAD
 
-=======
->>>>>>> 89eb92fdb621fa8d54616e014e5bc9014da55cf3
 
 
 
@@ -20,12 +17,10 @@ function Properties() {
       <AddProperty />
 
       <h4>Search Property</h4>
-<<<<<<< HEAD
-      <PropertiesDisplay/>
-=======
+
     <PropertiesDisplay/>
 
->>>>>>> 89eb92fdb621fa8d54616e014e5bc9014da55cf3
+
 
   
     </div>
