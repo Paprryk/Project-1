@@ -52,7 +52,7 @@ function BuyerDisplay() {
 
 
 return (
-    <div>
+    <div className="col-2">
         {buyerList}
     </div>
 )
