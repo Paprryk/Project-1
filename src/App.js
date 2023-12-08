@@ -14,13 +14,13 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Router>
+       <Router>
         <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#e3f2fd",}} >
-          <div>
-           <Link to='/'><button type="button" className="btn btn-success" style={{margin:"10px"}}>Home</button></Link>
-            <Link  to='/buyers'><button type="button" className="btn btn-success" style={{margin:"10px"}}>Buyers</button></Link>
-            <Link to='/sellers'><button type="button" className="btn btn-success" style={{margin:"10px"}}>Sellers</button></Link>
-            <Link to='/properties'><button type="button" className="btn btn-success" style={{margin:"10px"}}> Properties</button></Link>
+          <div><div className="homeimage"></div>
+           <Link to='/'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Home</button></Link>
+            <Link  to='/buyers'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Buyers</button></Link>
+            <Link to='/sellers'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Sellers</button></Link>
+            <Link to='/properties'><button type="button" className="btn btn-primary" style={{margin:"10px"}}> Properties</button></Link>
             
             </div>
         </nav>

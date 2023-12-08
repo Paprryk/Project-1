@@ -40,12 +40,23 @@
 
 
 /***********Styles added by TC**********/
-.homebody {
-  background: url("../public/Capture.PNG");
-  background-size: cover;
+.homeimage {
+  background: url("../public/S&S.png");
+  background-size: auto;
   background-repeat: no-repeat;
-  height: 94vh;
+  height: 10vh;
+  background-position: left;
 
 }
+
+.location {
+  background: url("../public/Location.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-position: top;
+
+}
+
 
 

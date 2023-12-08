@@ -49,9 +49,7 @@ function RegBuyer() {
             />
 
             <div>
-                <button type="submit">
-                    Submit
-                </button>
+            <button className="btn btn-primary" type="submit">Submit</button>
                 
             </div>
 
