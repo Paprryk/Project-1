@@ -56,11 +56,14 @@ PropertiesStructure.propTypes = {
 
     status: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired
+<<<<<<< HEAD
 
 
     
     
 
+=======
+>>>>>>> ae7cfc45075c3bd63f00a772b51d593150c95cab
 }
 
 export default PropertiesStructure;

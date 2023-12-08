@@ -10,9 +10,7 @@ function AddProperty() {
     const [bathroom, setBathroom] = useState("");
     const [garden, setGarden] = useState("");
     const [status, setStatus] = useState("");
-    const [picture, setPicture] = useState("");
-    
-    
+    const [picture, setPicture] = useState("");    
     
     return (<form onSubmit={e => {
        

@@ -8,61 +8,44 @@ function RegBuyer() {
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
 
-
     return (
 
         <form onSubmit={e => {
             e.preventDefault();
             axios.post("http://localhost:3000/buyers",
-                { firstname, lastname })
-
-
+                { firstname, lastname })                
                 .then(response => {
                     console.log(response);
                     setFirstname("");
                     setLastname("");
-
-                }
-
-                )
-                .catch(err => console.error(err))
-        }} >
-          
-            <ul> 
-                <fieldset  style={{border:"solid", width:"50%"}} >
-                    <legend>Add Buyer</legend>
-                    {/* <li> */}
-                         <label  style={{padding:"10px"}} htmlFor="firstName">FirstName</label>
-                        <input style={{margin:"10px"}}
-                            id="firstName"
-                            firstname="firstname"
-                            type="text"
-                            value={firstname}
-                            onChange={e => setFirstname(e.target.value)}
-                            required
-
-                        />
-                    {/* </li> */}
-<br />
-                    {/* <li> */}
-                         <label style={{padding:"10px"}}  htmlFor="lastName">LastName</label>
-                        <input style={{margin:"10px"}}
-                            id="lastName"
-                            lastname="lastname"
-                            type="text"
-                            value={lastname}
-                            onChange={e => setLastname(e.target.value)}
-                            required
-                        />
-                    {/* </li> */}
-           
-
+                }).catch(err => console.error(err))
+        }}>
+<div class="border border-primary p-2 mb-2 border-4" style={{backgroundColor: "#e3f2fd", width: "80%"}}>
+            <label htmlFor="firstName">First Name</label>
+            <br/><input
+                id="firstName"
+                firstname="firstname"
+                type="text"
+                value={firstname}
+                onChange={e => setFirstname(e.target.value)}
+                required                
+            />
+            <br/><label htmlFor="lastName">Last Name</label>
+            <br/><input
+                id="lastName"
+                lastname="lastname"
+                type="text"
+                value={lastname}
+                onChange={e => setLastname(e.target.value)}
+                required
+            />
             <div>
-
-                <button className="btn btn-primary" type="submit">Submit</button>
+                <br/><button type="submit">
+                    Submit
+                </button></div>
+                
             </div>
-        </fieldset>
-         </ul>
+        
        
 
            
