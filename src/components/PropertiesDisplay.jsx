@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
-function PropertiesDisplay() {
+function PropertiesDisplay(props) {
 
     const [filterAdd, setFilterAdd] = useState("")
     const [filterCity, setFilterCity] = useState("")
@@ -16,19 +16,19 @@ function PropertiesDisplay() {
     const [filterBathroom, setFilterBathroom] = useState("")
     // const [filterStatus, setFilterStatus] = useState("")
 
-    function getProperties() {
-        axios.get("http://localhost:3000/properties")
-            .then((response) => { setProperties(response.data) })
-            .catch(console.log)
-    }
+    // function getProperties() {
+    //     axios.get("http://localhost:3000/properties")
+    //         .then((response) => { setProperties(response.data) })
+    //         .catch(console.log)
+    // }
 
-    useEffect(() => { getProperties() }, []) //makes sure getbuyers is triggered once
+    // useEffect(() => { getProperties() }, []) 
 
-    const [properties, setProperties] = useState([])
+    // const [properties, setProperties] = useState([])
 
     const propertyList = []
 
-    for (const property of properties) {
+    for (const property of props.listProperties) {
         // console.log("Properties:", property);
         if (filterAdd && !property.address.toLowerCase().includes(filterAdd.toLowerCase())) continue;
         if (filterCity && !property.city.toLowerCase().includes(filterCity.toLowerCase())) continue;
@@ -52,6 +52,7 @@ console.log("Property:", property)
                 garden={property.garden}
                 id={property.id}
                 status={property.status}
+                image={property.image}
 
             />
         )
@@ -113,7 +114,7 @@ console.log("Property:", property)
 
 
     function getProperties(){
-        axios.get("http://localhost:3000/properties").then((res) => setProperties(res.data)).catch(console.log)
+        axios.get("http://localhost:3000/properties").then((res) => props.listProperties(res.data)).catch(console.log)
     }
 
 
