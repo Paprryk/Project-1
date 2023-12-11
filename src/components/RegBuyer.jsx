@@ -21,8 +21,9 @@ function RegBuyer() {
                 }).catch(err => console.error(err))
         }}>
 <div class="border border-primary p-2 mb-2 border-4" style={{backgroundColor: "#e3f2fd", width: "80%"}}>
+    <h4 style={{textAlign:    "center"}}>Register New Buyer</h4>
             <label htmlFor="firstName">First Name</label>
-            <br/><input
+            <br/><input style={{width:"50%"}}
                 id="firstName"
                 firstname="firstname"
                 type="text"
@@ -31,7 +32,7 @@ function RegBuyer() {
                 required                
             />
             <br/><label htmlFor="lastName">Last Name</label>
-            <br/><input
+            <br/><input style={{width:"50%"}}
                 id="lastName"
                 lastname="lastname"
                 type="text"
@@ -40,7 +41,7 @@ function RegBuyer() {
                 required
             />
             <div>
-                <br/><button type="submit">
+                <br/><button className="btn btn-primary" type="submit">
                     Submit
                 </button></div>
                 

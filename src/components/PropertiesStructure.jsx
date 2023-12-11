@@ -30,7 +30,7 @@ function PropertiesStructure(props) {
                             <option style={{ color: "orange"}}value={"Sold"}> Sold</option>
                             <option style={{ color: "red"}}value={"Withdrawn"}>Withdrawn</option>
                         </select> */}
-                        Status:{props.status}
+                        {/* Status:{props.status} */}
 
                         Status: {props.status}<br />
                          <br></br>
@@ -53,17 +53,9 @@ PropertiesStructure.propTypes = {
     bedrooms: PropTypes.string.isRequired,
     bathroom: PropTypes.string.isRequired,
     garden: PropTypes.string.isRequired,
-
     status: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired
-<<<<<<< HEAD
-
-
-    
-    
-
-=======
->>>>>>> ae7cfc45075c3bd63f00a772b51d593150c95cab
+    id: PropTypes.number.isRequired,
+    pic: PropTypes.string
 }
 
 export default PropertiesStructure;

@@ -39,11 +39,7 @@ function BuyerDisplay() {
         }
         
 return (
-<<<<<<< HEAD
-    <div className="col-2">
-=======
     <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
->>>>>>> ae7cfc45075c3bd63f00a772b51d593150c95cab
         {buyerList}
     </div>
 )
