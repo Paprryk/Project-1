@@ -23,19 +23,10 @@ function PropertiesStructure(props) {
                         Bedrooms: {props.bedrooms}<br />
                         Bathroom: {props.bathroom}<br />
                         Garden: {props.garden}<br />
-
-                        {/* <label>Status :</label> */}
-                        {/* <select onSelect={e => setStatus(e.target.value) } >
-                            <option  style={{ color: "green"}}value={"For Sale"}>For Sale</option>
-                            <option style={{ color: "orange"}}value={"Sold"}> Sold</option>
-                            <option style={{ color: "red"}}value={"Withdrawn"}>Withdrawn</option>
-                        </select> */}
-                        Status:{props.status}
-
                         Status: {props.status}<br />
-                         <br></br>
+                        <br></br>
 
-                        <Status id={props.id}/> 
+                        <Status id={props.id} />
 
 
                     </div>
