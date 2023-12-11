@@ -44,6 +44,11 @@
       "firstname": "John",
       "lastname": "Smith",
       "id": 9
+    },
+    {
+      "firstname": "hate",
+      "lastname": "this",
+      "id": 10
     }
   ],
   "sellers": [
@@ -71,73 +76,24 @@
       "firstname": "Jordan",
       "lastname": "Harrison",
       "id": 5
+    },
+    {
+      "firstname": "hate",
+      "lastname": "this",
+      "id": 6
     }
   ],
   "properties": [
     {
-      "id": 1,
-      "status": "For Sale",
-      "address": "50 Hampton street",
-      "type": "Detached",
-      "city": "London",
-      "price": 200000,
-      "bedrooms": "5",
-      "bathroom": "2",
-      "garden": "No"
-    },
-    {
-      "id": 2,
-      "status": "SOLD",
-      "address": "29 Liverdale street",
-      "type": "End Terrace",
-      "city": "Leeds",
-      "price": 150000,
-      "bedrooms": "4",
-      "bathroom": "1",
-      "garden": "Yes"
-    },
-    {
-      "id": 3,
-      "status": "Withdrawn",
-      "address": "10 Boyland road",
-      "type": "Terraced",
-      "city": "Manchester",
-      "price": 100000,
-      "bedrooms": "3",
-      "bathroom": "2",
-      "garden": "No"
-    },
-    {
-      "id": 4,
-      "status": "For Sale",
-      "address": "152 Harford street",
-      "type": "Semi-Detached",
-      "city": "Birmingham",
-      "price": 250000,
-      "bedrooms": "5",
-      "bathroom": "3",
-      "garden": "Yes"
-    },
-    {
-      "address": "Luttrell Road, Four Oaks Estate",
-      "status": "For Sale",
-      "type": "Detached",
-      "city": "Sutton Coldfield",
-      "price": 3500000,
-      "bedrooms": "7",
-      "bathroom": "6",
-      "garden": "Yes",
-      "id": 5
-    },
-    {
       "address": "Holden at Dunsmore Avenue, Bingham",
-      "status": "Re-Submit",
+      "status": "For Sale",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,
       "bedrooms": "4",
       "bathroom": "3",
       "garden": "Yes",
+      "image": "https://media.placebuzz.com/c480x365/photo/p-35704740-0-1.jpg",
       "id": 6
     },
     {
@@ -149,6 +105,7 @@
       "bathroom": "4",
       "garden": "Yes",
       "id": 7,
+      "image": "https://media.houseandgarden.co.uk/photos/644a9c7223689cbbe1bb9f6d/3:2/w_1788,h_1192,c_limit/Screenshot%202023-04-27%20at%2017.01.50.png",
       "status": "For Sale"
     },
     {
@@ -160,6 +117,7 @@
       "bathroom": "1",
       "garden": "Yes",
       "id": 8,
+      "image": "https://media.rightmove.co.uk/184k/183023/135114377/183023_RX261068_IMG_17_0001.jpeg",
       "status": "For Sale"
     },
     {
@@ -171,7 +129,92 @@
       "bathroom": "1",
       "garden": "No",
       "status": "Withdrawn",
+      "image": "https://www.baufritz.com/01_Haeuser/Kundenh%C3%A4user/2021/Brunt/Bilder/15132/image-thumb__15132__houseOverview/_B759852_bj.jpg",
       "id": 9
+    },
+    {
+      "address": "52 Rawford street",
+      "type": "Detached",
+      "city": "London",
+      "price": "500000",
+      "bedrooms": "5",
+      "bathroom": "2",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://media.rightmove.co.uk/dir/crop/10:9-16:9/63k/62307/133146488/62307_NUN230258_IMG_00_0000_max_476x317.jpeg",
+      "id": 10
+    },
+    {
+      "address": "2 Harford road",
+      "type": "Flat",
+      "city": "London",
+      "price": "800000",
+      "bedrooms": "1",
+      "bathroom": "1",
+      "garden": "No",
+      "status": "For Sale",
+      "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
+      "id": 11
+    },
+    {
+      "address": "5 Longlands road",
+      "type": "Detached",
+      "city": "Glasgow",
+      "price": "15000000",
+      "bedrooms": "4",
+      "bathroom": "2",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://www.jamesedition.com/stories/wp-content/uploads/2022/03/mansions_main_fin.jpg",
+      "id": 12
+    },
+    {
+      "address": "52 Rawford street",
+      "type": "abc",
+      "city": "xyz",
+      "price": "2",
+      "bedrooms": "5",
+      "bathroom": "1",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://media.rightmove.co.uk/dir/crop/10:9-16:9/63k/62307/133146488/62307_NUN230258_IMG_00_0000_max_476x317.jpeg",
+      "id": 13
+    },
+    {
+      "address": "2 Harford road",
+      "type": "Detached",
+      "city": "Glasgow",
+      "price": "2",
+      "bedrooms": "3",
+      "bathroom": "1",
+      "garden": "",
+      "status": "",
+      "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
+      "id": 14
+    },
+    {
+      "address": "2 Harford road",
+      "type": "abc",
+      "city": "London",
+      "price": "2",
+      "bedrooms": "1",
+      "bathroom": "1",
+      "garden": "",
+      "status": "",
+      "image": "https://media.rightmove.co.uk/dir/crop/10:9-16:9/63k/62307/133146488/62307_NUN230258_IMG_00_0000_max_476x317.jpeg",
+      "id": 15
+    },
+    {
+      "address": "Navigate test",
+      "type": "2",
+      "city": "2",
+      "price": "2",
+      "bedrooms": "2",
+      "bathroom": "2",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
+      "id": 16
     }
   ]
 }

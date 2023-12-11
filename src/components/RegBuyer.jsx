@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import BuyerDisplay from "./BuyerDisplay";
 
-function RegBuyer() {
+function RegBuyer(props) {
 
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
@@ -17,6 +17,7 @@ function RegBuyer() {
                     console.log(response);
                     setFirstname("");
                     setLastname("");
+                    props.getBuyers();
                 }).catch(err => console.error(err))
         }}>
             <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
