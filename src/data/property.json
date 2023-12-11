@@ -49,6 +49,11 @@
       "firstname": "hate",
       "lastname": "this",
       "id": 10
+    },
+    {
+      "firstname": "Test new buyer",
+      "lastname": "test new buyer",
+      "id": 11
     }
   ],
   "sellers": [
@@ -86,7 +91,7 @@
   "properties": [
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
-      "status": "For Sale",
+      "status": "Withdrawn",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,
@@ -106,7 +111,7 @@
       "garden": "Yes",
       "id": 7,
       "image": "https://media.houseandgarden.co.uk/photos/644a9c7223689cbbe1bb9f6d/3:2/w_1788,h_1192,c_limit/Screenshot%202023-04-27%20at%2017.01.50.png",
-      "status": "For Sale"
+      "status": "Withdrawn"
     },
     {
       "address": "Berry Croft",
@@ -118,7 +123,7 @@
       "garden": "Yes",
       "id": 8,
       "image": "https://media.rightmove.co.uk/184k/183023/135114377/183023_RX261068_IMG_17_0001.jpeg",
-      "status": "For Sale"
+      "status": "Sold"
     },
     {
       "address": "Ellerslie Grove, Sandiacre",
@@ -128,7 +133,7 @@
       "bedrooms": "3",
       "bathroom": "1",
       "garden": "No",
-      "status": "Withdrawn",
+      "status": "Sold",
       "image": "https://www.baufritz.com/01_Haeuser/Kundenh%C3%A4user/2021/Brunt/Bilder/15132/image-thumb__15132__houseOverview/_B759852_bj.jpg",
       "id": 9
     },

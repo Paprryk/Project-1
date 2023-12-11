@@ -8,19 +8,12 @@ import Col from 'react-bootstrap/Col';
 import { useState, useEffect } from "react";
 
 function Properties() {
-  function getProperties() {
-    axios.get("http://localhost:3000/properties")
-        .then((response) => { setProperties(response.data) })
-        .catch(console.log)
-}
-useEffect(() => { getProperties() }, []) 
-const [properties, setProperties] = useState([])
 
   return (
     <div>
       <h4>Search Property</h4>
 
-    <PropertiesDisplay listProperties={properties}/>
+    <PropertiesDisplay/>
     </div>
   );
 }
