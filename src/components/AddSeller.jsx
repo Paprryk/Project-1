@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-function AddSeller() {
+function AddSeller(props) {
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
 
@@ -12,6 +12,7 @@ function AddSeller() {
             .then(response => {
                 setFirstname("");
                 setLastname("");
+                props.getSellers();
             })
             .catch(err => console.error(err))
     }}>

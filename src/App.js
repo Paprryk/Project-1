@@ -9,6 +9,7 @@ import { useState } from 'react';
 import PropTypes from "prop-types";
 import property from './data/property.json';
 import './App.css';
+import AddPropertiesPage from './components/AddPropertiesPage';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             <Link  to='/buyers'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Buyers</button></Link>
             <Link to='/sellers'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Sellers</button></Link>
             <Link to='/properties'><button type="button" className="btn btn-primary" style={{margin:"10px"}}> Properties</button></Link>
-            
+            <Link to='/addpropertiespage'><button type="button" className="btn btn-primary" style={{margin:"10px"}}> Add Property</button></Link>
             </div>
         </nav>
         <Routes> 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/buyers' element={<Buyers />} />
           <Route path='/sellers' element={<Sellers />} />
           <Route path='/properties' element={<Properties />} />
+          <Route path='/addpropertiespage' element={<AddPropertiesPage />} />
         </Routes>
       </Router>
       
