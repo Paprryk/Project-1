@@ -2,14 +2,12 @@ import BuyerStructure from "./BuyerStructure";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-
-
 function BuyerDisplay() {
 
     function getBuyers() {
         axios.get("http://localhost:3000/buyers")
         .then((response)=>{setBuyers(response.data)})
-        .catch(console.log)
+        .catch(console.log)        
     }
 
     useEffect(()=>{getBuyers()},[]) //makes sure getbuyers is triggered once
@@ -20,18 +18,28 @@ function BuyerDisplay() {
 
     for (const buyer of buyers) {
         console.log("Buyers:", buyer);
-
         buyerList.push(
             <BuyerStructure
                 key={buyer.firstname + "" + buyer.lastname}
                 firstname={buyer.firstname}
                 lastname={buyer.lastname}
+                id={buyer.id}
             />
         )
     }
 
+        useEffect(() => {
+  
+            getBuyers();
+        }, [])
+    
+
+        function getBuyers(){
+            axios.get("http://localhost:3000/buyers").then((res) => setBuyers(res.data)).catch(console.log)
+        }
+        
 return (
-    <div>
+    <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
         {buyerList}
     </div>
 )

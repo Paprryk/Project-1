@@ -9,11 +9,15 @@ function AddProperty() {
     const [bedrooms, setBedrooms] = useState("");
     const [bathroom, setBathroom] = useState("");
     const [garden, setGarden] = useState("");
-    const [picture, setPicture] = useState("");
-
+    const [status, setStatus] = useState("");
+    const [picture, setPicture] = useState("");    
+    
     return (<form onSubmit={e => {
+       
         e.preventDefault()
-        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden})
+
+        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden, status})
+
             .then(response => {
                 setAddress("");
                 setType("");
@@ -22,10 +26,14 @@ function AddProperty() {
                 setBedrooms("");
                 setBathroom("");
                 setGarden("");
+                setStatus("");
                 setPicture("");
+                setStatus("")
 
-            })
+            }) 
+            
             .catch(err => console.error(err))
+            
     }}>
         <label htmlFor="address" className="form-label">Address</label>
         <input size="50"
@@ -81,7 +89,7 @@ function AddProperty() {
             onChange={e => setBathroom(e.target.value)}
             required
         />
-                <label htmlFor="garden" className="form-label">Garden</label>
+                {/* <label htmlFor="garden" className="form-label">Garden</label>
         <input size="50"
             id="garden"
             className="form-control"
@@ -89,7 +97,42 @@ function AddProperty() {
             value={garden}
             onChange={e => setGarden(e.target.value)}
             required
-        />
+        /> */}
+
+
+            <label htmlFor="garden" className="form-label">Garden</label>        
+            <select onChange={e => setGarden(e.target.value)}   >
+                       <option selected value={""} onChange={e => setGarden(e.target.value)} ></option>
+                            <option onChange={e => setGarden(e.target.value)} >Yes</option>
+                            <option onChange={e => setGarden(e.target.value)} >No</option>
+                        </select>
+<br/>
+
+
+{/* 
+<label htmlFor="status" className="form-label">Status</label>
+        <input size="50"
+            id="status"
+            className="form-control"
+            type="text" 
+            value="For Sale"
+            onChange={e => setStatus(e.target.value)}
+            required
+        /> */}
+
+
+
+        <label htmlFor="status" className="form-label">Status</label>
+                   <select onChange={e => setStatus(e.target.value)}   >
+                       <option selected value={""} onChange={e => setStatus(e.target.value)} ></option>
+                            <option  style={{ color: "green"}}value={"For Sale"} onChange={e => setStatus(e.target.value)} >For Sale</option>
+                            <option style={{ color: "orange"}}value={"Sold"} onChange={e => setStatus(e.target.value)} > Sold</option>
+                            <option style={{ color: "red"}}value={"Withdrawn"} onChange={e => setStatus(e.target.value)} >Withdrawn</option>
+                         
+                        </select>
+
+
+
 
 
 
@@ -103,10 +146,26 @@ function AddProperty() {
             required
         />
 
+{/* Added by TC */}
 
+
+<label htmlFor="status" className="form-label">Status</label>
+        
+          
+            <select onChange={e => setStatus(e.target.value)}   >
+                       <option selected value={""} onChange={e => setStatus(e.target.value)} ></option>
+                            <option  style={{ color: "green"}}value={"For Sale"} onChange={e => setStatus(e.target.value)} >For Sale</option>
+                            <option style={{ color: "orange"}}value={"Sold"} onChange={e => setStatus(e.target.value)} > Sold</option>
+                            <option style={{ color: "red"}}value={"Withdrawn"} onChange={e => setStatus(e.target.value)} >Withdrawn</option>
+                         
+                        </select>
+                                
+       
         
         <div className="mt-2">
-            <button className="btn btn-success" type="submit">Submit</button>
+
+            <button className="btn btn-primary" type="submit">Submit</button>
+
         </div>
 
 

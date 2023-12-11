@@ -25,8 +25,29 @@ function SellerDisplay() {
         )
     }
 
+
+
+
+    useEffect(() => {
+   
+        // setInterval(() => {
+        //     getSellers()
+        // }, 2000)
+
+        getSellers();
+    }, [])
+
+
+    function getSellers(){
+        axios.get("http://localhost:3000/sellers").then((res) => setSellers(res.data)).catch(console.log)
+    }
+
+
+
+
+
     return (
-        <div>
+        <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
             {sellerList}
         </div>
     );
