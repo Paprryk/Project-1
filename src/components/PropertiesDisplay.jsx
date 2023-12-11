@@ -16,30 +16,31 @@ function PropertiesDisplay(props) {
     const [filterBathroom, setFilterBathroom] = useState("")
     // const [filterStatus, setFilterStatus] = useState("")
 
-    // function getProperties() {
-    //     axios.get("http://localhost:3000/properties")
-    //         .then((response) => { setProperties(response.data) })
-    //         .catch(console.log)
-    // }
+    function getProperties() {
+        axios.get("http://localhost:3000/properties")
+            .then((response) => { setProperties(response.data) })
+            .catch(console.log)
+    }
 
-    // useEffect(() => { getProperties() }, []) 
+    useEffect(() => { getProperties() }, []) 
 
-    // const [properties, setProperties] = useState([])
+    const [properties, setProperties] = useState([])
 
     const propertyList = []
 
-    for (const property of props.listProperties) {
+    for (const property of properties) {
         // console.log("Properties:", property);
         if (filterAdd && !property.address.toLowerCase().includes(filterAdd.toLowerCase())) continue;
         if (filterCity && !property.city.toLowerCase().includes(filterCity.toLowerCase())) continue;
         if (filterType !== "" && !property.type.toLowerCase().includes(filterType.toLowerCase())) continue;
-        if (filterMinPrice && filterMinPrice > property.price) continue;
-        if (filterMaxPrice && filterMaxPrice < property.price) continue;
-        if (filterBathroom > property.bathroom) continue;
-        if (filterBedroom > property.bedrooms) continue;
+        if (Number(filterMinPrice) && Number(filterMinPrice) > Number(property.price)) continue;
+        if (Number(filterMaxPrice) && Number(filterMaxPrice) < Number(property.price)) continue;
+        if (Number(filterBathroom) > Number(property.bathroom)) continue;
+        if (Number(filterBedroom) > Number(property.bedrooms)) continue;
         if (filterGarden && filterGarden !== property.garden) continue;
         // if (filterStatus == property.status) continue;
 console.log("Property:", property)
+
         propertyList.push(
             <PropertiesStructure
                 key={property.id}
@@ -53,7 +54,7 @@ console.log("Property:", property)
                 id={property.id}
                 status={property.status}
                 image={property.image}
-
+            getProperties={getProperties}
             />
         )
     }
@@ -98,31 +99,6 @@ console.log("Property:", property)
         setFilterGarden(event.target.value);
 
     }
-
-
-
-
-
-    useEffect(() => {
-   
-        // setInterval(() => {
-        //     getProperties()
-        // }, 2000)
-
-        getProperties();
-    }, [])
-
-
-    function getProperties(){
-        axios.get("http://localhost:3000/properties").then((res) => props.listProperties(res.data)).catch(console.log)
-    }
-
-
-
-
-
-
-
     
     return (
         <div>
@@ -130,8 +106,21 @@ console.log("Property:", property)
             <input name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} />
             <br /><label>City</label><br />
             <input name="property.city" type="text" value={filterCity} onChange={handleChangeCity} />
-            <br /><label>Type</label><br />
-            <input name="property.type" type="text" value={filterType} onChange={handleChangeType} />
+            
+
+
+            <br /><label htmlFor="Type" className="form-label">Type</label><br />
+                   <select onChange={handleChangeType}   >
+                   <option  value={""} ></option>
+                            <option  value={"Detached"}  >Detached</option>
+                            <option value={"Semi-Detached"}  > Semi-Detached</option>
+                            <option value={"Terraced"} >Terraced</option>
+                            <option value={"Bungalow"} >Bungalow</option>
+                            <option value={"Flat"} >Flat</option>  
+                        </select> <br />
+
+
+
             <br /> <label>Min. Bedroom</label><br />
             <input name="property.bedroom" type="text" value={filterBedroom} onChange={handleChangeBedroom} />
             <br /><label>Min. Bathroom</label><br />
@@ -148,7 +137,8 @@ console.log("Property:", property)
             </select> 
             {/* <input name="property.status" type="text" value={filterAdd} onChange={handleChangeStatus} />
             <br /><label>Status</label><br /> */}
-             <p>{propertyList}</p>
+            <br/>
+             {propertyList}
         </div>
     )
 

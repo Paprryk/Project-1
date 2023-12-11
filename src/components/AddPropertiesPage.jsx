@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 function AddPropertiesPage() {
   return (
     <div>
-    <h4>Add Property</h4>
+    <h3 style={{ color: "#0a69ca" }}>Add Property</h3>
       <AddProperty />
     </div>
   );
