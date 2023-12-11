@@ -1,0 +1,66 @@
+//         <div>
+
+// <input type="text" readOnly value={status} />
+//             <br />
+
+//             <button onClick={e => {
+//                 e.preventDefault()
+//                 axios.post("http://localhost:3000/properties", { status })
+//                     .then(response => {
+//                         setStatus("For Sale");
+//                     })
+//                     .catch(err => console.error(err))
+//             }}>
+
+//                 For Sale
+//             </button>;
+
+            /* <button onClick={e => {
+                e.preventDefault()
+                axios.post("http://localhost:3000/properties", { status })
+                    .then(response => {
+                        setStatus("SOLD");
+                    })
+                    .catch(err => console.error(err))
+            }}>
+
+                SOLD
+            </button>;
+
+            <button onClick={e => {
+                e.preventDefault()
+                axios.post("http://localhost:3000/properties", { status })
+                    .then(response => {
+                        setStatus("Withdrawn");
+                    })
+                    .catch(err => console.error(err))
+            }}>
+
+                Withdrawn
+            </button>;
+
+            <button onClick={e => {
+                e.preventDefault()
+                axios.post("http://localhost:3000/properties", { status })
+                    .then(response => {
+                        setStatus("For Sale");
+                    })
+                    .catch(err => console.error(err))
+            }}>
+
+                Re-Submit
+            </button>;
+        </div> */
+
+
+
+        
+    useEffect(function () {
+        axios.get("http://localhost:3000/properties")
+            .then(response => {
+                console.log("response:", response)
+                setStatus(response);
+            })
+            .catch(err => console.err(err))
+    }, []);
+

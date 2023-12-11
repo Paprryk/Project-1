@@ -10,17 +10,16 @@ import PropTypes from "prop-types";
 import property from './data/property.json';
 import './App.css';
 
-
 function App() {
   return (
     <div>
-       <Router>
+      <Router>
         <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#e3f2fd",}} >
-          <div><div className="homeimage"></div>
-           <Link to='/'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Home</button></Link>
-            <Link  to='/buyers'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Buyers</button></Link>
-            <Link to='/sellers'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Sellers</button></Link>
-            <Link to='/properties'><button type="button" className="btn btn-primary" style={{margin:"10px"}}> Properties</button></Link>
+          <div>
+           <Link to='/'><button>Home</button></Link>
+            <Link  to='/buyers'><button>Buyers</button></Link>
+            <Link to='/sellers'><button>Sellers</button></Link>
+            <Link to='/properties'><button>Properties</button></Link>
             
             </div>
         </nav>
@@ -31,9 +30,13 @@ function App() {
           <Route path='/properties' element={<Properties />} />
         </Routes>
       </Router>
-      
+<div>
+  {}
+</div>
 
-    </div>
+          </div>
+
+
 
   );
 }
