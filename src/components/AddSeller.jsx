@@ -3,7 +3,7 @@ import { useState } from "react";
 // import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 // import Home from './Home';
 
-function AddSeller() {
+function AddSeller(props) {
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
 
@@ -16,6 +16,7 @@ function AddSeller() {
             .then(response => {
                 setFirstname("");
                 setLastname("");
+                props.getSellers();
             })
             .catch(err => console.error(err))
     }}>

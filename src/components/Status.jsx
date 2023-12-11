@@ -11,7 +11,7 @@ import axios from "axios";
 
 
 function Status(props) {
-    const [status, setStatus] = useState("")
+    // const [status, setStatus] = useState("")
 
 
 
@@ -25,6 +25,7 @@ function Status(props) {
                 
                 axios.patch("http://localhost:3000/properties/" + props.id, { status: "For Sale" })
                     .then(response => {
+                        props.getProperties()
                         // setStatus("For Sale");
                     })
                     .catch(err => console.error(err))

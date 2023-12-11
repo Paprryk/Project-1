@@ -15,7 +15,7 @@ function PropertiesStructure(props) {
             <div className="card">
                 <div className="card-body">
                     <h4>£{props.price}</h4><br />
-                    <img id="House" src="https://lid.zoocdn.com/u/1600/1200/bac90d574c72de3647414f5c0f4a7390a4a5305d.jpg:p" width={"60%"}></img>
+                    <img id="House" src= {props.image} width={"60%"}></img>
                     <div className="card-text">
                         <br />Address: {props.address}<br />
                         City: {props.city}<br />
@@ -46,7 +46,7 @@ PropertiesStructure.propTypes = {
     garden: PropTypes.string.isRequired,
     status: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
-    pic: PropTypes.string
+    image: PropTypes.string,
 }
 
 export default PropertiesStructure;
