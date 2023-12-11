@@ -14,7 +14,7 @@ function PropertiesStructure(props) {
         <div className="d-inline-flex " style={{ maxWidth: "20%", margin: "20px" }}>
             <div className="card">
                 <div className="card-body">
-                    <h4>£{props.price}</h4><br />
+                    <h4>£{props.price.toLocaleString()}</h4><br />
                     <img id="House" src= {props.image} width={"60%"}></img>
                     <div className="card-text">
                         <br />Address: {props.address}<br />

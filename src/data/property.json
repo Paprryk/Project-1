@@ -49,6 +49,16 @@
       "firstname": "hate",
       "lastname": "this",
       "id": 10
+    },
+    {
+      "firstname": "Samuel",
+      "lastname": "Jacob",
+      "id": 11
+    },
+    {
+      "firstname": "Joshua",
+      "lastname": "Jacob",
+      "id": 12
     }
   ],
   "sellers": [
@@ -81,12 +91,17 @@
       "firstname": "hate",
       "lastname": "this",
       "id": 6
+    },
+    {
+      "firstname": "Lauren",
+      "lastname": "Carver",
+      "id": 7
     }
   ],
   "properties": [
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
-      "status": "For Sale",
+      "status": "SOLD",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,
@@ -106,7 +121,7 @@
       "garden": "Yes",
       "id": 7,
       "image": "https://media.houseandgarden.co.uk/photos/644a9c7223689cbbe1bb9f6d/3:2/w_1788,h_1192,c_limit/Screenshot%202023-04-27%20at%2017.01.50.png",
-      "status": "For Sale"
+      "status": "SOLD"
     },
     {
       "address": "Berry Croft",
@@ -215,6 +230,30 @@
       "status": "For Sale",
       "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
       "id": 16
+    },
+    {
+      "address": "11 Fintry Ave",
+      "type": "Terraced",
+      "city": "Livingston",
+      "price": "140000",
+      "bedrooms": "1",
+      "bathroom": "",
+      "garden": "Yes",
+      "status": "SOLD",
+      "image": "https://lid.zoocdn.com/u/1600/1200/aca5fd3d1079ababefe68dfafde964cf76f85aa5.jpg:p",
+      "id": 17
+    },
+    {
+      "address": "23 cypress glade",
+      "type": "Detached",
+      "city": "Edinburgh",
+      "price": "400000",
+      "bedrooms": "5+",
+      "bathroom": "",
+      "garden": "Yes",
+      "status": "SOLD",
+      "image": "https://lid.zoocdn.com/u/1600/1200/288762132bfca0de5fdc9519b8d192b008d0f530.jpg:p",
+      "id": 18
     }
   ]
 }

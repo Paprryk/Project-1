@@ -121,17 +121,6 @@ function AddProperty() {
         <br />
 
 
-        {/* 
-<label htmlFor="status" className="form-label">Status</label>
-        <input size="50"
-            id="status"
-            className="form-control"
-            type="text" 
-            value="For Sale"
-            onChange={e => setStatus(e.target.value)}
-            required
-        /> */}
-
 
 
         <label htmlFor="status" className="form-label">Status</label>

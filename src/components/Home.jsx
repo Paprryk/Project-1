@@ -57,6 +57,7 @@ function Home() {
                 garden={property.garden}
                 // id={property.id}
                 status={property.status}
+                image={property.image}
 
             />
         )

@@ -42,7 +42,7 @@ function PropertiesDisplay(props) {
 console.log("Property:", property)
         propertyList.push(
             <PropertiesStructure
-                key={property.address}
+                key={property.id}
                 address={property.address}
                 type={property.type}
                 city={property.city}
