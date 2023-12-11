@@ -1,43 +1,4 @@
 {
-<<<<<<< HEAD
-    "buyers": [
-        {
-            "firstname": "Craig",
-            "lastname": "Morris"
-        },
-        {
-            "firstname": "Patryk",
-            "lastname": "Flasz"
-        },
-        {
-            "firstname": "Treesa",
-            "lastname": "Cherian"
-        },
-        {
-            "firstname": "Sailesh",
-            "lastname": "Patel"
-        }
-    ],
-    "sellers": [
-        {
-            "firstname": "Craig",
-            "lastname": "Morris"
-        },
-        {
-            "firstname": "Patryk",
-            "lastname": "Flasz"
-        },
-        {
-            "firstname": "Treesa",
-            "lastname": "Cherian"
-        },
-        {
-            "firstname": "Sailesh",
-            "lastname": "Patel"
-        }
-    ],
-    "properties": []
-=======
   "buyers": [
     {
       "id": 1,
@@ -213,5 +174,4 @@
       "id": 9
     }
   ]
->>>>>>> 56b28a46813fb2d38cc9064a078bac03dd4f041f
 }
