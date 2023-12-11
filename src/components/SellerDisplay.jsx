@@ -13,6 +13,7 @@ function SellerDisplay(props) {
                 key={seller.firstname + " " + seller.lastname}
                 firstname={seller.firstname}
                 lastname={seller.lastname}
+                id={seller.id}
             />
         )
     }
