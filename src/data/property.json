@@ -98,7 +98,7 @@
     },
     {
       "id": 3,
-      "status": "For Sale",
+      "status": "Withdrawn",
       "address": "10 Boyland road",
       "type": "Terraced",
       "city": "Manchester",
@@ -120,24 +120,24 @@
     },
     {
       "address": "Luttrell Road, Four Oaks Estate",
+      "status": "For Sale",
       "type": "Detached",
       "city": "Sutton Coldfield",
       "price": 3500000,
       "bedrooms": "7",
       "bathroom": "6",
       "garden": "Yes",
-      "status": "For Sale",
       "id": 5
     },
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
+      "status": "Re-Submit",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,
       "bedrooms": "4",
       "bathroom": "3",
       "garden": "Yes",
-      "status": "Re-Submit",
       "id": 6
     },
     {
