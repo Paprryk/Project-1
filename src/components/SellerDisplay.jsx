@@ -47,7 +47,7 @@ function SellerDisplay() {
 
 
     return (
-        <div>
+        <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
             {sellerList}
         </div>
     );
