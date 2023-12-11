@@ -44,16 +44,6 @@
       "firstname": "John",
       "lastname": "Smith",
       "id": 9
-    },
-    {
-      "firstname": "Samuel",
-      "lastname": "Jacob",
-      "id": 10
-    },
-    {
-      "firstname": "Samuel",
-      "lastname": "Jacob",
-      "id": 11
     }
   ],
   "sellers": [
@@ -81,6 +71,31 @@
       "firstname": "Jordan",
       "lastname": "Harrison",
       "id": 5
+    },
+    {
+      "firstname": "John ",
+      "lastname": "Smith",
+      "id": 6
+    },
+    {
+      "firstname": "John ",
+      "lastname": "Smith",
+      "id": 7
+    },
+    {
+      "firstname": "abc",
+      "lastname": "def",
+      "id": 8
+    },
+    {
+      "firstname": "hfgsdgf",
+      "lastname": "sfdsd",
+      "id": 9
+    },
+    {
+      "firstname": "test",
+      "lastname": "test",
+      "id": 10
     }
   ],
   "properties": [
@@ -108,7 +123,7 @@
     },
     {
       "id": 3,
-      "status": "For Sale",
+      "status": "Withdrawn",
       "address": "10 Boyland road",
       "type": "Terraced",
       "city": "Manchester",
@@ -141,7 +156,7 @@
     },
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
-      "status": "For Sale",
+      "status": "Re-Submit",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,

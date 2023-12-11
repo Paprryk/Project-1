@@ -28,7 +28,7 @@ function AddProperty() {
                 setGarden("");
                 setStatus("");
                 setPicture("");
-                setStatus("")
+                // setStatus("")
 
             }) 
             
