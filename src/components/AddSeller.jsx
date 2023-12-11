@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
+// import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+// import Home from './Home';
 
 function AddSeller() {
     const [firstname, setFirstname] = useState("");
@@ -7,7 +9,9 @@ function AddSeller() {
 
 
     return (<form onSubmit={e => {
-        e.preventDefault()
+        e.preventDefault();
+        // <Link to='/'></Link>;
+        // <Route path='/' element={<Home />} />
         axios.post("http://localhost:3000/sellers", { firstname, lastname })
             .then(response => {
                 setFirstname("");

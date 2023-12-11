@@ -44,6 +44,11 @@
       "firstname": "John",
       "lastname": "Smith",
       "id": 9
+    },
+    {
+      "firstname": "Lauren",
+      "lastname": "Carver",
+      "id": 10
     }
   ],
   "sellers": [
@@ -96,6 +101,21 @@
       "firstname": "test",
       "lastname": "test",
       "id": 10
+    },
+    {
+      "firstname": "dave",
+      "lastname": "Smith",
+      "id": 11
+    },
+    {
+      "firstname": "John",
+      "lastname": "David",
+      "id": 12
+    },
+    {
+      "firstname": "fdgd",
+      "lastname": "dfzgdf",
+      "id": 13
     }
   ],
   "properties": [
@@ -197,6 +217,17 @@
       "garden": "No",
       "status": "Withdrawn",
       "id": 9
+    },
+    {
+      "address": "11 Fintry Ave",
+      "type": "Terraced",
+      "city": "Livingston",
+      "price": "140000",
+      "bedrooms": "1",
+      "bathroom": "",
+      "garden": "Yes",
+      "status": "For Sale",
+      "id": 10
     }
   ]
 }
