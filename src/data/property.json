@@ -260,5 +260,25 @@
       "image": "https://lid.zoocdn.com/u/1600/1200/288762132bfca0de5fdc9519b8d192b008d0f530.jpg:p",
       "id": 18
     }
+  ],
+  "bookings": [
+    {
+      "date": "2023-12-14",
+      "time": "11:00-12.00",
+      "properties": "8",
+      "id": 1
+    },
+    {
+      "date": "2023-12-16",
+      "time": "",
+      "properties": "7",
+      "id": 2
+    },
+    {
+      "date": "2023-12-20",
+      "time": "10:00-11.00",
+      "properties": "8",
+      "id": 3
+    }
   ]
 }
