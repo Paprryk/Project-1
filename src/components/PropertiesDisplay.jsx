@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
-function PropertiesDisplay() {
+function PropertiesDisplay(props) {
 
     const [filterAdd, setFilterAdd] = useState("")
     const [filterCity, setFilterCity] = useState("")
@@ -22,7 +22,7 @@ function PropertiesDisplay() {
             .catch(console.log)
     }
 
-    useEffect(() => { getProperties() }, []) //makes sure getbuyers is triggered once
+    useEffect(() => { getProperties() }, []) 
 
     const [properties, setProperties] = useState([])
 
@@ -33,16 +33,17 @@ function PropertiesDisplay() {
         if (filterAdd && !property.address.toLowerCase().includes(filterAdd.toLowerCase())) continue;
         if (filterCity && !property.city.toLowerCase().includes(filterCity.toLowerCase())) continue;
         if (filterType !== "" && !property.type.toLowerCase().includes(filterType.toLowerCase())) continue;
-        if (filterMinPrice && filterMinPrice > property.price) continue;
-        if (filterMaxPrice && filterMaxPrice < property.price) continue;
-        if (filterBathroom > property.bathroom) continue;
-        if (filterBedroom > property.bedrooms) continue;
+        if (Number(filterMinPrice) && Number(filterMinPrice) > Number(property.price)) continue;
+        if (Number(filterMaxPrice) && Number(filterMaxPrice) < Number(property.price)) continue;
+        if (Number(filterBathroom) > Number(property.bathroom)) continue;
+        if (Number(filterBedroom) > Number(property.bedrooms)) continue;
         if (filterGarden && filterGarden !== property.garden) continue;
         // if (filterStatus == property.status) continue;
 console.log("Property:", property)
+
         propertyList.push(
             <PropertiesStructure
-                key={property.address}
+                key={property.id}
                 address={property.address}
                 type={property.type}
                 city={property.city}
@@ -52,7 +53,8 @@ console.log("Property:", property)
                 garden={property.garden}
                 id={property.id}
                 status={property.status}
-
+                image={property.image}
+            getProperties={getProperties}
             />
         )
     }
@@ -97,31 +99,6 @@ console.log("Property:", property)
         setFilterGarden(event.target.value);
 
     }
-
-
-
-
-
-    useEffect(() => {
-   
-        // setInterval(() => {
-        //     getProperties()
-        // }, 2000)
-
-        getProperties();
-    }, [])
-
-
-    function getProperties(){
-        axios.get("http://localhost:3000/properties").then((res) => setProperties(res.data)).catch(console.log)
-    }
-
-
-
-
-
-
-
     
     return (
         <div>
@@ -129,8 +106,21 @@ console.log("Property:", property)
             <input name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} />
             <br /><label>City</label><br />
             <input name="property.city" type="text" value={filterCity} onChange={handleChangeCity} />
-            <br /><label>Type</label><br />
-            <input name="property.type" type="text" value={filterType} onChange={handleChangeType} />
+            
+
+
+            <br /><label htmlFor="Type" className="form-label">Type</label><br />
+                   <select onChange={handleChangeType}   >
+                   <option  value={""} ></option>
+                            <option  value={"Detached"}  >Detached</option>
+                            <option value={"Semi-Detached"}  > Semi-Detached</option>
+                            <option value={"Terraced"} >Terraced</option>
+                            <option value={"Bungalow"} >Bungalow</option>
+                            <option value={"Flat"} >Flat</option>  
+                        </select> <br />
+
+
+
             <br /> <label>Min. Bedroom</label><br />
             <input name="property.bedroom" type="text" value={filterBedroom} onChange={handleChangeBedroom} />
             <br /><label>Min. Bathroom</label><br />
@@ -147,7 +137,8 @@ console.log("Property:", property)
             </select> 
             {/* <input name="property.status" type="text" value={filterAdd} onChange={handleChangeStatus} />
             <br /><label>Status</label><br /> */}
-             <p>{propertyList}</p>
+            <br/>
+             {propertyList}
         </div>
     )
 

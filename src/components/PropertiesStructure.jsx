@@ -9,13 +9,13 @@ import Status from "./Status";
 
 function PropertiesStructure(props) {
 
-    const [status, setStatus] = useState("")
+console.log(props)
     return (
         <div className="d-inline-flex " style={{ maxWidth: "20%", margin: "20px" }}>
             <div className="card">
                 <div className="card-body">
-                    <h4>£{props.price}</h4><br />
-                    <img id="House" src="https://lid.zoocdn.com/u/1600/1200/bac90d574c72de3647414f5c0f4a7390a4a5305d.jpg:p" width={"60%"}></img>
+                    <h4>£{Number(props.price).toLocaleString("EN-UK")}</h4><br />
+                    <img id="House" src= {props.image} width={"60%"}></img>
                     <div className="card-text">
                         <br />Address: {props.address}<br />
                         City: {props.city}<br />
@@ -26,7 +26,7 @@ function PropertiesStructure(props) {
                         Status: {props.status}<br />
                         <br></br>
 
-                        <Status id={props.id} />
+                        <Status id={props.id} getProperties={props.getProperties}/>
 
 
                     </div>
@@ -44,9 +44,9 @@ PropertiesStructure.propTypes = {
     bedrooms: PropTypes.string.isRequired,
     bathroom: PropTypes.string.isRequired,
     garden: PropTypes.string.isRequired,
-
     status: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired
+    id: PropTypes.number.isRequired,
+    image: PropTypes.string,
 }
 
 export default PropertiesStructure;

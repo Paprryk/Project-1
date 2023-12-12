@@ -5,17 +5,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useState, useEffect } from "react";
 
-function Properties() {
-
+function AddPropertiesPage() {
   return (
     <div>
-      <h4>Search Property</h4>
-
-    <PropertiesDisplay/>
+    <h3 style={{ color: "#0a69ca" }}>Add Property</h3>
+      <AddProperty />
     </div>
   );
 }
 
-export default Properties;
+export default AddPropertiesPage;

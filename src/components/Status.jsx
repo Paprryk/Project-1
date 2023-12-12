@@ -11,66 +11,41 @@ import axios from "axios";
 
 
 function Status(props) {
-    const [status, setStatus] = useState("")
 
+
+    function handleClick(e, status) {
+        e.preventDefault()
+
+        axios.patch("http://localhost:3000/properties/" + props.id, { status })
+            .then(response => {
+                props.getProperties()
+
+            })
+            .catch(err => console.error(err))
+    }
 
 
     return (
-        <div>
+<div>
 
-            {/* <input type="text" readOnly value={status} /> */}
-            <br />
-            <button className="btn btn-success" type="submit" onClick={e => {
-                e.preventDefault()
 
-                axios.patch("http://localhost:3000/properties/" + props.id, { status: "For Sale" })
-                    .then(response => {
-                        // setStatus("For Sale");
-                    })
-                    .catch(err => console.error(err))
-            }}>
 
-                For Sale
-            </button>
-
-            <button className="btn btn-success" type="submit" onClick={e => {
-                e.preventDefault()
-                axios.patch("http://localhost:3000/properties/" + props.id, { status: "SOLD" })
-                    .then(response => {
-                        // setStatus("SOLD");
-                    })
-                    .catch(err => console.error(err))
-            }}>
-
-                SOLD
-            </button>
-
-            <button className="btn btn-success" type="submit" onClick={e => {
-                e.preventDefault()
-                axios.patch("http://localhost:3000/properties/" + props.id, { status: "Withdrawn" })
-                    .then(response => {
-                        // setStatus("Withdrawn");
-                    })
-                    .catch(err => console.error(err))
-            }}>
-
-                Withdrawn
-            </button>
-
-            <button className="btn btn-success" type="submit" onClick={e => {
-                e.preventDefault()
-                axios.patch("http://localhost:3000/properties/" + props.id, { status: "Re-Submit" })
-                    .then(response => {
-                        // setStatus("For Sale");
-                    })
-                    .catch(err => console.error(err))
-            }}>
-
-                Re-Submit
-            </button>
-        </div>
+        <button className="btn btn-primary" type="submit"  onClick={(e) => handleClick(e, "For Sale")}>
+        For Sale
+    </button>
+    &nbsp;
+    <button className="btn btn-primary"  type="submit" onClick={(e) => handleClick(e, "Sold")}>
+        Sold
+    </button>
+    &nbsp;
+    <button className="btn btn-primary" type="submit" onClick={(e) => handleClick(e, "Withdrawn")}>
+        Withdraw
+    </button>
+    
+    </div>
+    
     );
+    
 }
-
 
 export default Status;
