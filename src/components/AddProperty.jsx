@@ -141,11 +141,10 @@ function AddProperty() {
             onChange={e => setImage(e.target.value)}
             required
         />
-        {/* Added by TC */}
+        
         <div className="mt-2">
             <button className="btn btn-primary" type="submit">Submit</button>
-            {/* <Link to='/properties'><button type="submit" className="btn btn-primary" style={{margin:"10px"}}> submit</button></Link> */}
-       
+            
         </div>
 
 

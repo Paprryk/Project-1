@@ -54,6 +54,11 @@
       "firstname": "Test new buyer",
       "lastname": "test new buyer",
       "id": 11
+    },
+    {
+      "firstname": "Joshua",
+      "lastname": "Jacob",
+      "id": 12
     }
   ],
   "sellers": [
@@ -91,6 +96,11 @@
       "firstname": "Lauren",
       "lastname": "Carver",
       "id": 7
+    },
+    {
+      "firstname": "Samuel",
+      "lastname": "Jacob",
+      "id": 8
     }
   ],
   "properties": [
