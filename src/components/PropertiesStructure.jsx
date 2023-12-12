@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { useState, useEffect } from "react";
 
 import Status from "./Status";
+import BookingButton from "./Bookings/BookingButton";
 
 
 function PropertiesStructure(props) {
@@ -27,6 +28,7 @@ console.log(props)
                         <br></br>
 
                         <Status id={props.id} getProperties={props.getProperties}/>
+                        <BookingButton  id={props.id}/>
 
 
                     </div>
