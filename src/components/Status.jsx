@@ -41,6 +41,9 @@ function Status(props) {
     <button className="btn btn-primary" type="submit" onClick={(e) => handleClick(e, "Withdrawn")}>
         Withdraw
     </button>
+    <button className="btn btn-primary" type="submit">
+        Bookings
+    </button>
     
     </div>
     
