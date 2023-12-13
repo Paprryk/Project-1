@@ -85,7 +85,7 @@ const params =useParams();
     <button className="btn btn-primary" type="submit" onClick={(e) => handleClick(e, "Withdrawn")}>
         Withdraw
     </button>
-  
+
     
     </div>
     
