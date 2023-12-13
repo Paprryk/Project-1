@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import BuyerDisplay from "./BuyerDisplay";
+import BuyerStructure from "./BuyerStructure";
 
 function RegBuyer(props) {
 

@@ -54,6 +54,11 @@
       "firstname": "Test new buyer",
       "lastname": "test new buyer",
       "id": 11
+    },
+    {
+      "firstname": "Joshua",
+      "lastname": "Jacob",
+      "id": 12
     }
   ],
   "sellers": [
@@ -86,6 +91,16 @@
       "firstname": "hate",
       "lastname": "this",
       "id": 6
+    },
+    {
+      "firstname": "Lauren",
+      "lastname": "Carver",
+      "id": 7
+    },
+    {
+      "firstname": "Samuel",
+      "lastname": "Jacob",
+      "id": 8
     }
   ],
   "properties": [
@@ -220,6 +235,50 @@
       "status": "For Sale",
       "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
       "id": 16
+    },
+    {
+      "address": "11 Fintry Ave",
+      "type": "Terraced",
+      "city": "Livingston",
+      "price": "140000",
+      "bedrooms": "1",
+      "bathroom": "",
+      "garden": "Yes",
+      "status": "SOLD",
+      "image": "https://lid.zoocdn.com/u/1600/1200/aca5fd3d1079ababefe68dfafde964cf76f85aa5.jpg:p",
+      "id": 17
+    },
+    {
+      "address": "23 cypress glade",
+      "type": "Detached",
+      "city": "Edinburgh",
+      "price": "400000",
+      "bedrooms": "5+",
+      "bathroom": "",
+      "garden": "Yes",
+      "status": "SOLD",
+      "image": "https://lid.zoocdn.com/u/1600/1200/288762132bfca0de5fdc9519b8d192b008d0f530.jpg:p",
+      "id": 18
+    }
+  ],
+  "bookings": [
+    {
+      "date": "2023-12-14",
+      "time": "11:00-12.00",
+      "properties": "8",
+      "id": 1
+    },
+    {
+      "date": "2023-12-16",
+      "time": "",
+      "properties": "7",
+      "id": 2
+    },
+    {
+      "date": "2023-12-20",
+      "time": "10:00-11.00",
+      "properties": "8",
+      "id": 3
     }
   ]
 }
