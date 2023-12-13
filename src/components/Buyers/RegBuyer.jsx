@@ -23,7 +23,7 @@ function RegBuyer(props) {
         }}>
             <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
                 <label htmlFor="firstName">First Name</label>
-                <br /><input
+                <br /><input className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
                     id="firstName"
                     firstname="firstname"
                     type="text"
@@ -32,7 +32,7 @@ function RegBuyer(props) {
                     required
                 />
                 <br /><label htmlFor="lastName">Last Name</label>
-                <br /><input
+                <br /><input className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
                     id="lastName"
                     lastname="lastname"
                     type="text"

@@ -6,8 +6,8 @@ function Properties() {
 
   return (
     <div>
-      <h4>Search Property</h4>
-    <PropertiesDisplay/>
+      <h3 style={{ color: "#0a69ca" }}>Search Property</h3>
+      <br/><PropertiesDisplay/>
     </div>
   );
 }
