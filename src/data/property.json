@@ -106,7 +106,7 @@
   "properties": [
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
-      "status": "Withdrawn",
+      "status": "For Sale",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,
@@ -279,6 +279,18 @@
       "time": "10:00-11.00",
       "properties": "8",
       "id": 3
+    },
+    {
+      "date": "2023-12-14",
+      "time": "9:00-10.00",
+      "properties": "9",
+      "id": 4
+    },
+    {
+      "date": "2023-12-22",
+      "time": "14:00-15.00",
+      "properties": "6",
+      "id": 5
     }
   ]
 }

@@ -7,8 +7,7 @@ function BookingDisplay(props) {
         console.log("Booking:", booking);
         bookingList.push(
             <BookingStructure
-                key={booking.id }
-                properties={booking.properties}              
+                key={booking.id }          
                 date={booking.date}
                 time={booking.time}
                 

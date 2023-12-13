@@ -2,12 +2,10 @@ import PropTypes from "prop-types";
 
 function BookingStructure(props) {
     return (
-        <div>Booking: {props.id}
+        <div>Bookings: {props.id}
         <div className="row">
-            <p className="col-2"> {props.properties}</p>
-            <p className="col"> {props.id}</p>
-            <p className="col"> {props.date}</p>
-            <p className="col"> {props.time}</p>
+            <p className="col">Date: {props.date}</p>
+            <p className="col">Time: {props.time}</p>
         </div>
 </div>
 

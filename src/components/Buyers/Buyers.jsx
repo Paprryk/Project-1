@@ -12,12 +12,12 @@ function Buyers() {
         .then((response)=>{setBuyers(response.data)})
         .catch(console.log)        
     }
-    useEffect(()=>{getBuyers()},[]) //makes sure getbuyers is triggered once
+    useEffect(()=>{getBuyers()},[])
     const [buyers, setBuyers] = useState([])
 
     return (
         <div className= "row">
-            <br /><h3 style={{ color: "#0a69ca" }}>Buyers</h3>
+            <br /><h3 style={{ color: "#0a69ca" }}>Buyers</h3><br/><br/>
             <br /><div className="col-6"><RegBuyer getBuyers={getBuyers}/></div>
             <div className="col-4"><BuyerDisplay listBuyers={buyers} /></div>
 
