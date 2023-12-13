@@ -1,7 +1,4 @@
-import PropertiesStructure from "../PropertiesStructure";
 import BookingStructure from "./BookingStructure";
-
-
 
 function BookingDisplay(props) {
     const bookingList = []
@@ -11,8 +8,7 @@ function BookingDisplay(props) {
         bookingList.push(
             <BookingStructure
                 key={booking.id }
-                properties={booking.properties}
-              
+                properties={booking.properties}              
                 date={booking.date}
                 time={booking.time}
                 

@@ -1,12 +1,8 @@
 import PropTypes from "prop-types";
 import 'bootstrap/dist/css/bootstrap.css';
-
-
 import { useState, useEffect } from "react";
-
 import Status from "./Status";
-import BookingButton from "./Bookings/BookingButton";
-
+import BookingButton from "../Bookings/BookingButton";
 
 function PropertiesStructure(props) {
 
@@ -26,18 +22,14 @@ console.log(props)
                         Garden: {props.garden}<br />
                         Status: {props.status}<br />
                         <br></br>
-
                         <Status id={props.id} getProperties={props.getProperties}/>
                         <BookingButton  id={props.id}/>
-
-
                     </div>
                 </div>
             </div>
         </div>
     )
 }
-
 PropertiesStructure.propTypes = {
     city: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,

@@ -10,8 +10,6 @@ function AddSeller(props) {
 
     return (<form onSubmit={e => {
         e.preventDefault();
-        // <Link to='/'></Link>;
-        // <Route path='/' element={<Home />} />
         axios.post("http://localhost:3000/sellers", { firstname, lastname })
             .then(response => {
                 setFirstname("");
