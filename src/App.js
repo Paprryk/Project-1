@@ -1,7 +1,7 @@
 import Home from './components/Home';
-import Buyers from './components/Buyers';
-import Sellers from './components/Sellers';
-import Properties from './components/Properties';
+import Buyers from './components/Buyers/Buyers';
+import Sellers from './components/Sellers/Sellers';
+import Properties from './components/Properties/Properties';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
@@ -9,7 +9,7 @@ import { useState } from 'react';
 import PropTypes from "prop-types";
 import property from './data/property.json';
 import './App.css';
-import AddPropertiesPage from './components/AddPropertiesPage';
+import AddPropertiesPage from './components/Properties/AddPropertiesPage';
 import BookingPage from './components/Bookings/BookingPage';
 
 
