@@ -7,8 +7,7 @@ function PropertiesRedirect() {
   const routeChange = () =>{ 
     let path = <Properties/>; 
     navigate(path);
-  }
-  
+  }  
   return (
     <button color="primary" className="px-4"
             onClick={routeChange}

@@ -22,7 +22,4 @@ function Sellers() {
             <div className="col-4"><SellerDisplay listSellers={sellers}/></div>
         </div>);
 }
-
-//UseState, when addSeller is called, sellerdisplay is reloaded
-
 export default Sellers;
