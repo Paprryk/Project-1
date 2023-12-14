@@ -1,5 +1,4 @@
 import BookingStructure from "./BookingStructure";
-import BookingPage from "./BookingPage";
 
 function BookingDisplay(props) {
     
@@ -13,6 +12,9 @@ function BookingDisplay(props) {
                 date={booking.date}
                 time={booking.time}
                 id={booking.id}
+                buyerID={booking.buyerID}
+                firstname={booking.firstname}
+                lastname={booking.lastname}
                 getBookings={props.getBookings}
             />
         )
