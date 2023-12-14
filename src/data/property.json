@@ -59,6 +59,61 @@
       "firstname": "Joshua",
       "lastname": "Jacob",
       "id": 12
+    },
+    {
+      "firstname": "Auto",
+      "lastname": "Test",
+      "id": 13
+    },
+    {
+      "firstname": "sailesh",
+      "lastname": "Patel",
+      "id": 14
+    },
+    {
+      "firstname": "Craig",
+      "lastname": "Morris",
+      "id": 15
+    },
+    {
+      "firstname": "Craig",
+      "lastname": "Morris",
+      "id": 16
+    },
+    {
+      "firstname": "Craig",
+      "lastname": "Borris",
+      "id": 17
+    },
+    {
+      "firstname": "Alex",
+      "lastname": "Davies",
+      "id": 18
+    },
+    {
+      "firstname": "Craig",
+      "lastname": "Morris",
+      "id": 19
+    },
+    {
+      "firstname": "Craig",
+      "lastname": "Morris",
+      "id": 20
+    },
+    {
+      "firstname": "Craig",
+      "lastname": "Morris",
+      "id": 21
+    },
+    {
+      "firstname": "Treesa",
+      "lastname": "cherian",
+      "id": 22
+    },
+    {
+      "firstname": "Jordan",
+      "lastname": "harrison1",
+      "id": 23
     }
   ],
   "sellers": [
@@ -101,6 +156,16 @@
       "firstname": "Samuel",
       "lastname": "Jacob",
       "id": 8
+    },
+    {
+      "firstname": "auto",
+      "lastname": "test",
+      "id": 9
+    },
+    {
+      "firstname": "crai",
+      "lastname": "morris",
+      "id": 10
     }
   ],
   "properties": [
@@ -208,7 +273,7 @@
       "bedrooms": "3",
       "bathroom": "1",
       "garden": "",
-      "status": "",
+      "status": "For Sale",
       "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
       "id": 14
     },
@@ -220,7 +285,7 @@
       "bedrooms": "1",
       "bathroom": "1",
       "garden": "",
-      "status": "",
+      "status": "Sold",
       "image": "https://media.rightmove.co.uk/dir/crop/10:9-16:9/63k/62307/133146488/62307_NUN230258_IMG_00_0000_max_476x317.jpeg",
       "id": 15
     },
@@ -259,6 +324,42 @@
       "status": "SOLD",
       "image": "https://lid.zoocdn.com/u/1600/1200/288762132bfca0de5fdc9519b8d192b008d0f530.jpg:p",
       "id": 18
+    },
+    {
+      "address": "Sunbeam Road",
+      "type": "Terraced",
+      "city": "Liverpool",
+      "price": "125000",
+      "bedrooms": "1",
+      "bathroom": "",
+      "garden": "No",
+      "status": "For Sale",
+      "image": "https://lid.zoocdn.com/u/768/576/258c77bedb754ae93873a39fb39cd2e4bdf8e770.jpg:p",
+      "id": 19
+    },
+    {
+      "address": "Liverpool Views Apartment",
+      "type": "Flat",
+      "city": "Liverpool",
+      "price": "170000",
+      "bedrooms": "1",
+      "bathroom": "1",
+      "garden": "No",
+      "status": "For Sale",
+      "image": "https://lid.zoocdn.com/u/768/576/1292bf42e9f3c11e574f457b2728a8e38366f5df.jpg:p",
+      "id": 20
+    },
+    {
+      "address": "Mannering Street",
+      "type": "Semi-Detached",
+      "city": "Manchester",
+      "price": "300000",
+      "bedrooms": "6",
+      "bathroom": "5",
+      "garden": "Yes",
+      "status": "",
+      "image": "https://lid.zoocdn.com/u/768/576/b8ec9fe45fe3f94214f45bf88c71954b97cd8b84.jpg:p",
+      "id": 21
     }
   ],
   "bookings": [
@@ -270,7 +371,7 @@
     },
     {
       "date": "2023-12-16",
-      "time": "",
+      "time": "13:00-14:00",
       "properties": "7",
       "id": 2
     },
@@ -287,10 +388,10 @@
       "id": 4
     },
     {
-      "date": "2023-12-22",
-      "time": "14:00-15.00",
-      "properties": "6",
-      "id": 5
+      "date": "2023-12-28",
+      "time": "12:00-13.00",
+      "properties": "10",
+      "id": 15
     }
   ]
 }

@@ -6,7 +6,7 @@ import { useEffect,useState } from "react";
 
 
 function Buyers() {
-
+    
     function getBuyers() {
         axios.get("http://localhost:3000/buyers")
         .then((response)=>{setBuyers(response.data)})

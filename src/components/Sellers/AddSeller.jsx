@@ -7,16 +7,35 @@ function AddSeller(props) {
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
 
+    function CheckSeller() {
 
-    return (<form onSubmit={e => {
-        e.preventDefault();
-        axios.post("http://localhost:3000/sellers", { firstname, lastname })
+
+        axios.get("http://localhost:3000/sellers").then(response => {
+            console.log(response)
+            for (const seller of response.data) {
+                if (seller.firstname.toLowerCase() === firstname.toLowerCase() && seller.lastname.toLowerCase() === lastname.toLowerCase()) {
+                         alert("Seller already exists")
+                         return;
+                }
+            }
+
+axios.post("http://localhost:3000/sellers", { firstname, lastname })
             .then(response => {
                 setFirstname("");
                 setLastname("");
                 props.getSellers();
             })
             .catch(err => console.error(err))
+
+        })
+    }
+
+    return (
+    
+    <form onSubmit={e => {
+        e.preventDefault();
+        CheckSeller();
+        
     }}>
         <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
             <label htmlFor="firstName">First Name</label>
