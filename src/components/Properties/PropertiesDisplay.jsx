@@ -76,9 +76,9 @@ function PropertiesDisplay(props) {
             <table class="table" className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "100%" }}>
                 <tbody>
                     <tr>
-                        <td scope="row" >Address<br /><input className="border-3 border-primary rounded" name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} /></td>
-                        <td>City<br /><input className="border-3 border-primary rounded" style={{width: "auto"}} name="property.city" type="text" value={filterCity} onChange={handleChangeCity} /></td>
-                        <td>Type<br /><select className="form-select border-3 border-primary" style={{width: "188px", height: "31px"}} onChange={handleChangeType}>
+                        <td scope="row" >Address<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} /></td>
+                        <td>City<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.city" type="text" value={filterCity} onChange={handleChangeCity} /></td>
+                        <td>Type<br /><select className="form-select border-3 border-primary" style={{width: "188px", height: "37px"}} onChange={handleChangeType}>
                             <option value={""} ></option>
                             <option value={"Detached"}  >Detached</option>
                             <option value={"Semi-Detached"}  > Semi-Detached</option>
@@ -86,17 +86,17 @@ function PropertiesDisplay(props) {
                             <option value={"Bungalow"} >Bungalow</option>
                             <option value={"Flat"} >Flat</option>
                         </select></td>
-                        <td>Garden<br /><select className="form-select border-3 border-primary " style={{width: "188px", height: "31px"}} name="property.garden" onChange={handleChangeGarden}>
+                        <td>Garden<br /><select className="form-select border-3 border-primary " style={{width: "188px", height: "37px"}} name="property.garden" onChange={handleChangeGarden}>
                             <option selected value={""}></option>
                             <option value={"Yes"}> Yes</option>
                             <option value={"No"}>No</option>
                         </select></td>
                     </tr>
                     <tr>
-                        <td scope="row">Min Bedroom<br /><input className="border-3 border-primary rounded" style={{width: "auto"}} name="property.bedroom" type="text" value={filterBedroom} onChange={handleChangeBedroom} /></td>
-                        <td>Min Bathroom<br /><input className="border-3 border-primary rounded" style={{width: "auto"}} name="property.bathroom" type="text" value={filterBathroom} onChange={handleChangeBathroom} /></td>
-                        <td>Min Price<br /><input className="border-3 border-primary rounded" style={{width: "auto"}} type="" value={filterMinPrice || ""} onChange={e => setFilterMinPrice(e.target.value)} /></td>
-                        <td>Max Price<br /><input className="border-3 border-primary rounded" style={{width: "auto"}} type="" value={filterMaxPrice || ""} onChange={e => setFilterMaxPrice(e.target.value)} /></td>
+                        <td scope="row">Min Bedroom<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.bedroom" type="text" value={filterBedroom} onChange={handleChangeBedroom} /></td>
+                        <td>Min Bathroom<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.bathroom" type="text" value={filterBathroom} onChange={handleChangeBathroom} /></td>
+                        <td>Min Price<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} type="" value={filterMinPrice || ""} onChange={e => setFilterMinPrice(e.target.value)} /></td>
+                        <td>Max Price<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} type="" value={filterMaxPrice || ""} onChange={e => setFilterMaxPrice(e.target.value)} /></td>
                     </tr><br/>
                 </tbody>
             </table>

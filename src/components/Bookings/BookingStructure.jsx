@@ -1,13 +1,23 @@
 import PropTypes from "prop-types";
+import axios from "axios";
+
 
 function BookingStructure(props) {
+
+    function deleteBooking (){
+    axios.delete("http://localhost:3000/bookings/" + props.id)
+    .then(response => {props.getBookings()})
+    .catch(err => console.error(err))
+    }
+
     return (
-        <div>Bookings: {props.id}
+        
         <div className="row">
-            <p className="col">Date: {props.date}</p>
+        <p className="col">Date: {props.date}</p>
             <p className="col">Time: {props.time}</p>
-        </div>
-</div>
+            <button onClick={deleteBooking}>Delete</button>
+        
+     </div>
 
     )
 }

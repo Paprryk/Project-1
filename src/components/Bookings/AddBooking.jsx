@@ -18,6 +18,7 @@ function AddBooking(props) {
             .then(response => {
                 setDate("");
                 setTime("");
+                props.getBookings();
 
 
             })

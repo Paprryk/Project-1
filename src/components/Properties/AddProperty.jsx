@@ -46,7 +46,7 @@ function AddProperty() {
                     <div label htmlFor="address" className="form-label">Address</div>
                     <input size="50"
                         id="address"
-                        className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
+                        className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "37px" }}
                         type="text"
                         value={address}
                         onChange={e => setAddress(e.target.value)}
@@ -57,7 +57,7 @@ function AddProperty() {
                     <label htmlFor="city" className="form-label">City</label>
                     <input size="50"
                         id="city"
-                        className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
+                        className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "37px" }}
                         type="text"
                         value={city}
                         onChange={e => setCity(e.target.value)}
@@ -65,12 +65,12 @@ function AddProperty() {
                     /></div>
                 <div className="col">
                     <label htmlFor="Type" className="form-label">Type</label><br />
-                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "31px" }} onChange={e => setType(e.target.value)}   >
+                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "37px" }} onChange={e => setType(e.target.value)}   >
                         <option selected value={""} onChange={e => setType(e.target.value)} ></option>
                         <option value={"Detached"} onChange={e => setType(e.target.value)} >Detached</option>
-                        <option value={"Semi_Detached"} onChange={e => setType(e.target.value)} > Semi_Detached</option>
+                        <option value={"Semi-Detached"} onChange={e => setType(e.target.value)} > Semi-Detached</option>
                         <option value={"Terraced"} onChange={e => setType(e.target.value)} >Terraced</option>
-                        <option value={"Bangalow"} onChange={e => setType(e.target.value)} >Bangalow</option>
+                        <option value={"Bungalow"} onChange={e => setType(e.target.value)} >Bungalow</option>
                         <option value={"Flat"} onChange={e => setType(e.target.value)} >Flat</option>
                     </select>
                 </div>
@@ -80,7 +80,7 @@ function AddProperty() {
                     <label htmlFor="price" className="form-label">Price</label>
                     <input size="50"
                         id="price"
-                        className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
+                        className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "37px" }}
                         type="number"
                         value={price}
                         onChange={e => setPrice(e.target.value)}
@@ -88,31 +88,34 @@ function AddProperty() {
                 </div>
                 <div className="col">
                     <label htmlFor="Bedrooms" className="form-label">Bedrooms</label>
-                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "31px" }} onChange={e => setBedrooms(e.target.value)}   >
+                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "37px" }} onChange={e => setBedrooms(e.target.value)}   >
                         <option selected value={""} onChange={e => setBedrooms(e.target.value)} ></option>
                         <option value={"1"} onChange={e => setBedrooms(e.target.value)} >1</option>
-                        <option value={"2"} onChange={e => setBedrooms(e.target.value)} > 2</option>
+                        <option value={"2"} onChange={e => setBedrooms(e.target.value)} >2</option>
                         <option value={"3"} onChange={e => setBedrooms(e.target.value)} >3</option>
                         <option value={"4"} onChange={e => setBedrooms(e.target.value)} >4</option>
-                        <option value={"5+"} onChange={e => setBedrooms(e.target.value)} >5+</option>
+                        <option value={"5"} onChange={e => setBedrooms(e.target.value)} >5</option>
+                        <option value={"6"} onChange={e => setBedrooms(e.target.value)} >6</option>
+                        <option value={"7"} onChange={e => setBedrooms(e.target.value)} >7</option>
                     </select>
                 </div>
 
                 <div className="col">
                     <label htmlFor="bathroom" className="form-label">Bathroom</label>
-                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "31px" }} onChange={e => setBedrooms(e.target.value)}   >
+                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "37px" }} onChange={e => setBathroom(e.target.value)}   >
                         <option selected value={""} onChange={e => setBathroom(e.target.value)} ></option>
                         <option value={"1"} onChange={e => setBathroom(e.target.value)} >1</option>
-                        <option value={"2"} onChange={e => setBathroom(e.target.value)} > 2</option>
+                        <option value={"2"} onChange={e => setBathroom(e.target.value)} >2</option>
                         <option value={"3"} onChange={e => setBathroom(e.target.value)} >3</option>
-                        <option value={"4+"} onChange={e => setBathroom(e.target.value)} >4+</option>
+                        <option value={"4"} onChange={e => setBathroom(e.target.value)} >4</option>
+                        <option value={"5"} onChange={e => setBathroom(e.target.value)} >5</option>
                     </select>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
                     <label htmlFor="garden" className="form-label">Garden</label>
-                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "31px" }} onChange={e => setGarden(e.target.value)}   >
+                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "37px" }} onChange={e => setGarden(e.target.value)}   >
                         <option selected value={""} onChange={e => setGarden(e.target.value)} ></option>
                         <option onChange={e => setGarden(e.target.value)} >Yes</option>
                         <option onChange={e => setGarden(e.target.value)} >No</option>
@@ -120,18 +123,17 @@ function AddProperty() {
                 </div>
                 <div className="col">
                     <label htmlFor="status" className="form-label">Status</label>
-                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "31px" }} onChange={e => setStatus(e.target.value)}   >
+                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "37px" }} onChange={e => setStatus(e.target.value)}   >
                         <option selected value={""} onChange={e => setStatus(e.target.value)} ></option>
                         <option style={{ color: "green" }} value={"For Sale"} onChange={e => setStatus(e.target.value)} >For Sale</option>
-                        <option style={{ color: "orange" }} value={"Sold"} onChange={e => setStatus(e.target.value)} > Sold</option>
-                        <option style={{ color: "red" }} value={"Withdrawn"} onChange={e => setStatus(e.target.value)} >Withdrawn</option>
+
                     </select>
                 </div>
                 <div className="col">
                     <label htmlFor="image" className="form-label">Image</label><br />
-                    <input size="50"
+                    <input size=""
                         id="image"
-                        className="src border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
+                        className="src border-3 border-primary rounded" style={{ width: "250px", height: "37px" }}
                         type="src"
                         value={image}
                         onChange={e => setImage(e.target.value)}
