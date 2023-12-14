@@ -6,59 +6,19 @@
       "lastname": "Morris"
     },
     {
-      "id": 2,
       "firstname": "Patryk",
-      "lastname": "Flasz"
+      "lastname": "Flasz",
+      "id": 2
     },
     {
-      "id": 3,
+      "firstname": "Sailesh",
+      "lastname": "Patel",
+      "id": 3
+    },
+    {
       "firstname": "Treesa",
-      "lastname": "Cherian"
-    },
-    {
-      "id": 4,
-      "firstname": "sailesh",
-      "lastname": "Patel"
-    },
-    {
-      "firstname": "Jordan",
-      "lastname": "Harrison",
-      "id": 5
-    },
-    {
-      "firstname": "Alex",
-      "lastname": "Henderson",
-      "id": 6
-    },
-    {
-      "firstname": "Mark",
-      "lastname": "Morrison",
-      "id": 7
-    },
-    {
-      "firstname": "Andrew",
-      "lastname": "McCall",
-      "id": 8
-    },
-    {
-      "firstname": "John",
-      "lastname": "Smith",
-      "id": 9
-    },
-    {
-      "firstname": "hate",
-      "lastname": "this",
-      "id": 10
-    },
-    {
-      "firstname": "Test new buyer",
-      "lastname": "test new buyer",
-      "id": 11
-    },
-    {
-      "firstname": "Joshua",
-      "lastname": "Jacob",
-      "id": 12
+      "lastname": "Cherian",
+      "id": 4
     }
   ],
   "sellers": [
@@ -68,45 +28,25 @@
       "lastname": "Morris"
     },
     {
-      "id": 2,
       "firstname": "Patryk",
-      "lastname": "Flasz"
+      "lastname": "Flasz",
+      "id": 2
     },
     {
-      "id": 3,
-      "firstname": "Treesa",
-      "lastname": "Cherian"
-    },
-    {
-      "id": 4,
       "firstname": "Sailesh",
-      "lastname": "Patel"
+      "lastname": "Patel",
+      "id": 3
     },
     {
-      "firstname": "Jordan",
-      "lastname": "Harrison",
-      "id": 5
-    },
-    {
-      "firstname": "hate",
-      "lastname": "this",
-      "id": 6
-    },
-    {
-      "firstname": "Lauren",
-      "lastname": "Carver",
-      "id": 7
-    },
-    {
-      "firstname": "Samuel",
-      "lastname": "Jacob",
-      "id": 8
+      "firstname": "Treesa",
+      "lastname": "Cherian",
+      "id": 4
     }
   ],
   "properties": [
     {
       "address": "Holden at Dunsmore Avenue, Bingham",
-      "status": "Withdrawn",
+      "status": "For Sale",
       "type": "Detached",
       "city": "Nottingham",
       "price": 493995,
@@ -114,170 +54,89 @@
       "bathroom": "3",
       "garden": "Yes",
       "image": "https://media.placebuzz.com/c480x365/photo/p-35704740-0-1.jpg",
-      "id": 6
+      "id": 1
     },
     {
-      "address": "Yarnells Hill",
+      "address": "Haldane Road",
+      "type": "Semi-Detached",
+      "city": "London",
+      "price": "50000000",
+      "bedrooms": "3",
+      "bathroom": "2",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://lid.zoocdn.com/354/255/5fb005c26fc73a35ec4230252b634056cd6b003c.jpg:p",
+      "id": 2
+    },
+    {
+      "address": "Honeybourne Road",
       "type": "Detached",
       "city": "Oxford",
-      "price": "2595000",
-      "bedrooms": "5",
-      "bathroom": "4",
-      "garden": "Yes",
-      "id": 7,
-      "image": "https://media.houseandgarden.co.uk/photos/644a9c7223689cbbe1bb9f6d/3:2/w_1788,h_1192,c_limit/Screenshot%202023-04-27%20at%2017.01.50.png",
-      "status": "Withdrawn"
-    },
-    {
-      "address": "Berry Croft",
-      "type": "Semi-Detached",
-      "city": "Abingdon",
-      "price": "385000",
-      "bedrooms": "3",
-      "bathroom": "1",
-      "garden": "Yes",
-      "id": 8,
-      "image": "https://media.rightmove.co.uk/184k/183023/135114377/183023_RX261068_IMG_17_0001.jpeg",
-      "status": "Sold"
-    },
-    {
-      "address": "Ellerslie Grove, Sandiacre",
-      "type": "Bungalow",
-      "city": "Nottingham",
-      "price": "350000",
-      "bedrooms": "3",
-      "bathroom": "1",
-      "garden": "No",
-      "status": "Sold",
-      "image": "https://www.baufritz.com/01_Haeuser/Kundenh%C3%A4user/2021/Brunt/Bilder/15132/image-thumb__15132__houseOverview/_B759852_bj.jpg",
-      "id": 9
-    },
-    {
-      "address": "52 Rawford street",
-      "type": "Detached",
-      "city": "London",
-      "price": "500000",
-      "bedrooms": "5",
-      "bathroom": "2",
-      "garden": "Yes",
-      "status": "For Sale",
-      "image": "https://media.rightmove.co.uk/dir/crop/10:9-16:9/63k/62307/133146488/62307_NUN230258_IMG_00_0000_max_476x317.jpeg",
-      "id": 10
-    },
-    {
-      "address": "2 Harford road",
-      "type": "Flat",
-      "city": "London",
-      "price": "800000",
-      "bedrooms": "1",
-      "bathroom": "1",
-      "garden": "No",
-      "status": "For Sale",
-      "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
-      "id": 11
-    },
-    {
-      "address": "5 Longlands road",
-      "type": "Detached",
-      "city": "Glasgow",
-      "price": "15000000",
-      "bedrooms": "4",
-      "bathroom": "2",
-      "garden": "Yes",
-      "status": "For Sale",
-      "image": "https://www.jamesedition.com/stories/wp-content/uploads/2022/03/mansions_main_fin.jpg",
-      "id": 12
-    },
-    {
-      "address": "52 Rawford street",
-      "type": "abc",
-      "city": "xyz",
-      "price": "2",
-      "bedrooms": "5",
-      "bathroom": "1",
-      "garden": "Yes",
-      "status": "For Sale",
-      "image": "https://media.rightmove.co.uk/dir/crop/10:9-16:9/63k/62307/133146488/62307_NUN230258_IMG_00_0000_max_476x317.jpeg",
-      "id": 13
-    },
-    {
-      "address": "2 Harford road",
-      "type": "Detached",
-      "city": "Glasgow",
-      "price": "2",
-      "bedrooms": "3",
-      "bathroom": "1",
-      "garden": "",
-      "status": "",
-      "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
-      "id": 14
-    },
-    {
-      "address": "2 Harford road",
-      "type": "abc",
-      "city": "London",
-      "price": "2",
-      "bedrooms": "1",
-      "bathroom": "1",
-      "garden": "",
-      "status": "",
-      "image": "https://media.rightmove.co.uk/dir/crop/10:9-16:9/63k/62307/133146488/62307_NUN230258_IMG_00_0000_max_476x317.jpeg",
-      "id": 15
-    },
-    {
-      "address": "Navigate test",
-      "type": "2",
-      "city": "2",
-      "price": "2",
+      "price": "3000000",
       "bedrooms": "2",
       "bathroom": "2",
       "garden": "Yes",
       "status": "For Sale",
-      "image": "https://blog.studios2let.com/wp-content/uploads/2019/09/london-studio-flat-rent-002.jpg",
-      "id": 16
+      "image": "https://lid.zoocdn.com/354/255/361c5a711b4e4efaa9a121509b0d336297306f2b.jpg:p",
+      "id": 3
     },
     {
-      "address": "11 Fintry Ave",
+      "address": "Tennyson Road",
       "type": "Terraced",
-      "city": "Livingston",
-      "price": "140000",
-      "bedrooms": "1",
-      "bathroom": "",
+      "city": "Middlesbrough",
+      "price": "150000",
+      "bedrooms": "3",
+      "bathroom": "1",
       "garden": "Yes",
-      "status": "SOLD",
-      "image": "https://lid.zoocdn.com/u/1600/1200/aca5fd3d1079ababefe68dfafde964cf76f85aa5.jpg:p",
-      "id": 17
+      "status": "For Sale",
+      "image": "https://lid.zoocdn.com/354/255/42c0f9dbd231cbd668faf4d30011998be0f88a2f.jpg:p",
+      "id": 4
     },
     {
-      "address": "23 cypress glade",
-      "type": "Detached",
+      "address": "Ryehill Grove",
+      "type": "Flat",
       "city": "Edinburgh",
-      "price": "400000",
-      "bedrooms": "5+",
-      "bathroom": "",
+      "price": "300000",
+      "bedrooms": "2",
+      "bathroom": "1",
+      "garden": "No",
+      "status": "Sold",
+      "image": "https://lid.zoocdn.com/645/430/6c1a9808998b2749f78c976122aba6e26c9a2e41.jpg:p",
+      "id": 5
+    },
+    {
+      "address": "Moredun park gardens",
+      "type": "Bungalow",
+      "city": "Glasgow",
+      "price": "500000",
+      "bedrooms": "2",
+      "bathroom": "1",
       "garden": "Yes",
-      "status": "SOLD",
-      "image": "https://lid.zoocdn.com/u/1600/1200/288762132bfca0de5fdc9519b8d192b008d0f530.jpg:p",
-      "id": 18
+      "status": "Sold",
+      "image": "https://lid.zoocdn.com/645/430/72297fb46e5fac5458e25f786815c6d1dd706bae.jpg:p",
+      "id": 6
     }
   ],
   "bookings": [
     {
-      "date": "2023-12-14",
-      "time": "11:00-12.00",
-      "properties": "8",
+      "date": "2023-11-27",
+      "time": "8AM",
+      "buyerID": "1",
+      "properties": "1",
       "id": 1
     },
     {
-      "date": "2023-12-16",
-      "time": "",
-      "properties": "7",
+      "date": "2023-11-27",
+      "time": "8AM",
+      "buyerID": "1",
+      "properties": "2",
       "id": 2
     },
     {
-      "date": "2023-12-20",
-      "time": "10:00-11.00",
-      "properties": "8",
+      "date": "2023-11-27",
+      "time": "9AM",
+      "buyerID": "2",
+      "properties": "2",
       "id": 3
     }
   ]

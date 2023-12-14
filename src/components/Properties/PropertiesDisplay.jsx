@@ -19,13 +19,13 @@ function PropertiesDisplay(props) {
             .catch(console.log)
     }
 
-    useEffect(() => { getProperties() }, []) 
+    useEffect(() => { getProperties() }, [])
 
     const [properties, setProperties] = useState([])
 
     const propertyList = []
 
-    for (const property of properties) {    
+    for (const property of properties) {
         if (filterAdd && !property.address.toLowerCase().includes(filterAdd.toLowerCase())) continue;
         if (filterCity && !property.city.toLowerCase().includes(filterCity.toLowerCase())) continue;
         if (filterType !== "" && !property.type.toLowerCase().includes(filterType.toLowerCase())) continue;
@@ -34,7 +34,7 @@ function PropertiesDisplay(props) {
         if (Number(filterBathroom) > Number(property.bathroom)) continue;
         if (Number(filterBedroom) > Number(property.bedrooms)) continue;
         if (filterGarden && filterGarden !== property.garden) continue;
-      console.log("Property:", property)
+        console.log("Property:", property)
 
         propertyList.push(
             <PropertiesStructure
@@ -49,7 +49,7 @@ function PropertiesDisplay(props) {
                 id={property.id}
                 status={property.status}
                 image={property.image}
-            getProperties={getProperties}
+                getProperties={getProperties}
             />
         )
     }
@@ -70,41 +70,41 @@ function PropertiesDisplay(props) {
     }
     function handleChangeGarden(event) {
         setFilterGarden(event.target.value);
-    }    
+    }
     return (
         <div>
-            <label>Address</label><br />
-            <input name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} />
-            <br /><label>City</label><br />
-            <input name="property.city" type="text" value={filterCity} onChange={handleChangeCity} />           
-
-            <br /><label htmlFor="Type" className="form-label">Type</label><br />
-                   <select onChange={handleChangeType}   >
-                   <option  value={""} ></option>
-                            <option  value={"Detached"}  >Detached</option>
+            <table class="table" className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "100%" }}>
+                <tbody>
+                    <tr>
+                        <td scope="row" >Address<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} /></td>
+                        <td>City<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.city" type="text" value={filterCity} onChange={handleChangeCity} /></td>
+                        <td>Type<br /><select className="form-select border-3 border-primary" style={{width: "188px", height: "37px"}} onChange={handleChangeType}>
+                            <option value={""} ></option>
+                            <option value={"Detached"}  >Detached</option>
                             <option value={"Semi-Detached"}  > Semi-Detached</option>
                             <option value={"Terraced"} >Terraced</option>
                             <option value={"Bungalow"} >Bungalow</option>
-                            <option value={"Flat"} >Flat</option>  
-                        </select> <br />
-
-            <br /> <label>Min. Bedroom</label><br />
-            <input name="property.bedroom" type="text" value={filterBedroom} onChange={handleChangeBedroom} />
-            <br /><label>Min. Bathroom</label><br />
-            <input name="property.bathroom" type="text" value={filterBathroom} onChange={handleChangeBathroom} />
-            <br /><label>Min Price</label><br />
-            <input type="" value={filterMinPrice || ""} onChange={e => setFilterMinPrice(e.target.value)} />
-            <br /><label>Max Price</label><br />
-            <input type="" value={filterMaxPrice || ""} onChange={e => setFilterMaxPrice(e.target.value)} />
-            <br /><label>Garden</label><br />
-            <select name="property.garden" onChange={handleChangeGarden}>
-                <option selected value={""}></option>
-                <option value={"Yes"}> Yes</option>
-                <option value={"No"}>No</option>
-            </select>             
-            <br/>
-             {propertyList}
-        </div>
+                            <option value={"Flat"} >Flat</option>
+                        </select></td>
+                        <td>Garden<br /><select className="form-select border-3 border-primary " style={{width: "188px", height: "37px"}} name="property.garden" onChange={handleChangeGarden}>
+                            <option selected value={""}></option>
+                            <option value={"Yes"}> Yes</option>
+                            <option value={"No"}>No</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Min Bedroom<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.bedroom" type="text" value={filterBedroom} onChange={handleChangeBedroom} /></td>
+                        <td>Min Bathroom<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.bathroom" type="text" value={filterBathroom} onChange={handleChangeBathroom} /></td>
+                        <td>Min Price<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} type="" value={filterMinPrice || ""} onChange={e => setFilterMinPrice(e.target.value)} /></td>
+                        <td>Max Price<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} type="" value={filterMaxPrice || ""} onChange={e => setFilterMaxPrice(e.target.value)} /></td>
+                    </tr><br/>
+                </tbody>
+            </table>
+            <br/><h4 style={{ color: "#0a69ca" }}>Search Results</h4><br/>
+            <div className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "100%" }}>
+            {propertyList}
+            </div>
+        </div >
     )
 }
 export default PropertiesDisplay;

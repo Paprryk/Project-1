@@ -8,10 +8,19 @@ function RegBuyer(props) {
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
 
-    return (
+    function CheckBuyer() {
 
-        <form onSubmit={e => {
-            e.preventDefault();
+
+
+        axios.get("http://localhost:3000/buyers").then(response => {
+            console.log(response)
+            for (const buyer of response.data) {
+                if (buyer.firstname.toLowerCase() === firstname.toLowerCase() && buyer.lastname.toLowerCase() === lastname.toLowerCase()) {
+                         alert("Buyer already exists")
+                         return;
+                }
+            }
+        
             axios.post("http://localhost:3000/buyers",
                 { firstname, lastname })
                 .then(response => {
@@ -20,10 +29,22 @@ function RegBuyer(props) {
                     setLastname("");
                     props.getBuyers();
                 }).catch(err => console.error(err))
+
+
+        })
+
+    }
+
+
+    return (
+
+        <form onSubmit={e => {
+            e.preventDefault();
+            CheckBuyer();
         }}>
             <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
                 <label htmlFor="firstName">First Name</label>
-                <br /><input
+                <br /><input className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
                     id="firstName"
                     firstname="firstname"
                     type="text"
@@ -32,7 +53,7 @@ function RegBuyer(props) {
                     required
                 />
                 <br /><label htmlFor="lastName">Last Name</label>
-                <br /><input
+                <br /><input className="form-control border-3 border-primary rounded" style={{ width: "250px", height: "31px" }}
                     id="lastName"
                     lastname="lastname"
                     type="text"
