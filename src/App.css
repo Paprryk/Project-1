@@ -32,7 +32,34 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+
+/***********Styles added by TC**********/
+.homeimage {
+  background: url("../public/S&S.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 10vh;
+  background-position: left;
+
+}
+
+.location {
+  background: url("../public/Location.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-position: top;
+  
+}
+.navBarImage{
+  display: url("sAndS.png");
+}
+
+
+

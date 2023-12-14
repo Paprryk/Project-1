@@ -1,5 +1,143 @@
 {
-    "buyers": [],
-    "sellers": [],
-    "properties": []
+  "buyers": [
+    {
+      "id": 1,
+      "firstname": "Craig",
+      "lastname": "Morris"
+    },
+    {
+      "firstname": "Patryk",
+      "lastname": "Flasz",
+      "id": 2
+    },
+    {
+      "firstname": "Sailesh",
+      "lastname": "Patel",
+      "id": 3
+    },
+    {
+      "firstname": "Treesa",
+      "lastname": "Cherian",
+      "id": 4
+    }
+  ],
+  "sellers": [
+    {
+      "id": 1,
+      "firstname": "Craig",
+      "lastname": "Morris"
+    },
+    {
+      "firstname": "Patryk",
+      "lastname": "Flasz",
+      "id": 2
+    },
+    {
+      "firstname": "Sailesh",
+      "lastname": "Patel",
+      "id": 3
+    },
+    {
+      "firstname": "Treesa",
+      "lastname": "Cherian",
+      "id": 4
+    }
+  ],
+  "properties": [
+    {
+      "address": "Holden at Dunsmore Avenue, Bingham",
+      "status": "For Sale",
+      "type": "Detached",
+      "city": "Nottingham",
+      "price": 493995,
+      "bedrooms": "4",
+      "bathroom": "3",
+      "garden": "Yes",
+      "image": "https://media.placebuzz.com/c480x365/photo/p-35704740-0-1.jpg",
+      "id": 1
+    },
+    {
+      "address": "Haldane Road",
+      "type": "Semi-Detached",
+      "city": "London",
+      "price": "50000000",
+      "bedrooms": "3",
+      "bathroom": "2",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://lid.zoocdn.com/354/255/5fb005c26fc73a35ec4230252b634056cd6b003c.jpg:p",
+      "id": 2
+    },
+    {
+      "address": "Honeybourne Road",
+      "type": "Detached",
+      "city": "Oxford",
+      "price": "3000000",
+      "bedrooms": "2",
+      "bathroom": "2",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://lid.zoocdn.com/354/255/361c5a711b4e4efaa9a121509b0d336297306f2b.jpg:p",
+      "id": 3
+    },
+    {
+      "address": "Tennyson Road",
+      "type": "Terraced",
+      "city": "Middlesbrough",
+      "price": "150000",
+      "bedrooms": "3",
+      "bathroom": "1",
+      "garden": "Yes",
+      "status": "For Sale",
+      "image": "https://lid.zoocdn.com/354/255/42c0f9dbd231cbd668faf4d30011998be0f88a2f.jpg:p",
+      "id": 4
+    },
+    {
+      "address": "Ryehill Grove",
+      "type": "Flat",
+      "city": "Edinburgh",
+      "price": "300000",
+      "bedrooms": "2",
+      "bathroom": "1",
+      "garden": "No",
+      "status": "Sold",
+      "image": "https://lid.zoocdn.com/645/430/6c1a9808998b2749f78c976122aba6e26c9a2e41.jpg:p",
+      "id": 5
+    },
+    {
+      "address": "Moredun park gardens",
+      "type": "Bungalow",
+      "city": "Glasgow",
+      "price": "500000",
+      "bedrooms": "2",
+      "bathroom": "1",
+      "garden": "Yes",
+      "status": "Sold",
+      "image": "https://lid.zoocdn.com/645/430/72297fb46e5fac5458e25f786815c6d1dd706bae.jpg:p",
+      "id": 6
+    }
+  ],
+  "bookings": [
+    {
+      "date": "2023-11-27",
+      "time": "8AM",
+      "buyerID": "1",
+      "properties": "1",
+      "id": 1
+    },
+    {
+      "date": "2023-11-27",
+      "time": "8AM",
+      "buyerID": "1",
+      "properties": "2",
+      "id": 2
+    },
+    {
+      "date": "2023-11-27",
+      "time": "9AM",
+      "buyerID": "2",
+      "properties": "2",
+      "id": 3
+    }
+  ]
 }
