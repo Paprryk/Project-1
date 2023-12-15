@@ -14,7 +14,7 @@ function BookingStructure(props) {
         <p className="col">Buyer ID: {props.buyerID}</p>
         <p className="col">Date: {props.date}</p>
         <p className="col">Time: {props.time}</p>
-        <button onClick={deleteBooking}>Delete</button>
+        <p><button style={{width: "80px"}}className="btn btn-primary col" onClick={deleteBooking}>Delete</button></p>
         </div>
     )
 }

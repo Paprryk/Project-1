@@ -122,22 +122,15 @@
       "date": "2023-11-27",
       "time": "8AM",
       "buyerID": "1",
-      "properties": "1",
-      "id": 1
-    },
-    {
-      "date": "2023-11-27",
-      "time": "8AM",
-      "buyerID": "1",
       "properties": "2",
       "id": 2
     },
     {
-      "date": "2023-11-27",
+      "date": "2023-12-15",
       "time": "9AM",
       "buyerID": "2",
-      "properties": "2",
-      "id": 3
+      "properties": "1",
+      "id": 4
     }
   ]
 }
