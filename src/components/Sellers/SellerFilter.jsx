@@ -4,8 +4,7 @@ function SellerStructure(props) {
     return (
         <div> Seller: {props.id}
             <div className="row">
-                <p className="col-2"> {props.firstname}</p>
-                <p className="col"> {props.lastname}</p>
+                <p className="col"> {props.firstname} {props.lastname}</p>
             </div>
         </div>
 

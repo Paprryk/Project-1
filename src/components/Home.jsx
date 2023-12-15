@@ -6,7 +6,7 @@ function Home() {
     return (
 
         <div><br /><br />
-            <h5 style={{ textAlign: "center", color: "#0a69ca" }}>An estate agent database create by "Scrum and Scrummer"</h5>
+            <h5 style={{ textAlign: "center", color: "#0a69ca" }}>An estate agent database created by "Scrum and Scrummer"</h5>
             <div>
             <br /><br /><div className="location"></div>
             <a href="https://maps.app.goo.gl/uSq8HAktiNPYP2Co6">
