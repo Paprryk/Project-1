@@ -5,6 +5,7 @@ function BuyerStructure(props) {
         <div>Buyer: {props.id}
         <div className="row">
             <p className="col"> {props.firstname} {props.lastname}</p>
+          
         </div>
 </div>
 
