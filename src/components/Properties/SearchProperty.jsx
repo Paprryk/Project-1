@@ -16,7 +16,7 @@ function SearchProperty() {
     const [filterBathroom, setFilterBathroom] = useState("")
 
     function getProperties() {
-        axios.get("http://localhost:8080/property/get")
+        axios.get("http://localhost:8081/property/get")
          .then((response) => { setProperties(response.data) })
          .catch(console.log)
     }
@@ -30,7 +30,7 @@ function SearchProperty() {
         if (filterMinPrice && filterMinPrice > property.price) continue;
         if (filterMaxPrice && filterMaxPrice < property.price) continue;
         if (filterBathroom > property.bathroom) continue;
-        if (filterBedroom > property.bedrooms) continue;
+        if (filterBedroom > property.bedroom) continue;
         if (filterGarden && filterGarden !== property.garden) continue;
 
         propertyList.push(
@@ -40,7 +40,7 @@ function SearchProperty() {
                 type={property.type}
                 city={property.city}
                 price={property.price}
-                bedrooms={property.bedrooms}
+                bedroom={property.bedroom}
                 bathroom={property.bathroom}
                 garden={property.garden}
                 id={property.id}

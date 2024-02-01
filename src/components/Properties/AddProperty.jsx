@@ -9,7 +9,7 @@ function AddProperty() {
     const [type, setType] = useState("");
     const [city, setCity] = useState("");
     const [price, setPrice] = useState("");
-    const [bedrooms, setBedrooms] = useState("");
+    const [bedroom, setBedroom] = useState("");
     const [bathroom, setBathroom] = useState("");
     const [garden, setGarden] = useState("");
     const [status, setStatus] = useState("");
@@ -20,14 +20,14 @@ function AddProperty() {
 
         e.preventDefault()
 
-        axios.post("http://localhost:8080/property/create", { address, type, city, price, bedrooms, bathroom, garden, status, image })
+        axios.post("http://localhost:8081/property/create", { address, type, city, price, bedroom, bathroom, garden, status, image })
 
             .then(response => {
                 setAddress("");
                 setType("");
                 setCity("");
                 setPrice("");
-                setBedrooms("");
+                setBedroom("");
                 setBathroom("");
                 setGarden("");
                 setStatus("");
@@ -88,15 +88,15 @@ function AddProperty() {
                 </div>
                 <div className="col">
                     <label htmlFor="Bedrooms" className="form-label">Bedrooms</label>
-                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "37px" }} onChange={e => setBedrooms(e.target.value)}   >
-                        <option selected value={""} onChange={e => setBedrooms(e.target.value)} ></option>
-                        <option value={"1"} onChange={e => setBedrooms(e.target.value)} >1</option>
-                        <option value={"2"} onChange={e => setBedrooms(e.target.value)} >2</option>
-                        <option value={"3"} onChange={e => setBedrooms(e.target.value)} >3</option>
-                        <option value={"4"} onChange={e => setBedrooms(e.target.value)} >4</option>
-                        <option value={"5"} onChange={e => setBedrooms(e.target.value)} >5</option>
-                        <option value={"6"} onChange={e => setBedrooms(e.target.value)} >6</option>
-                        <option value={"7"} onChange={e => setBedrooms(e.target.value)} >7</option>
+                    <select className="form-select border-3 border-primary" style={{ width: "250px", height: "37px" }} onChange={e => setBedroom(e.target.value)}   >
+                        <option selected value={""} onChange={e => setBedroom(e.target.value)} ></option>
+                        <option value={"1"} onChange={e => setBedroom(e.target.value)} >1</option>
+                        <option value={"2"} onChange={e => setBedroom(e.target.value)} >2</option>
+                        <option value={"3"} onChange={e => setBedroom(e.target.value)} >3</option>
+                        <option value={"4"} onChange={e => setBedroom(e.target.value)} >4</option>
+                        <option value={"5"} onChange={e => setBedroom(e.target.value)} >5</option>
+                        <option value={"6"} onChange={e => setBedroom(e.target.value)} >6</option>
+                        <option value={"7"} onChange={e => setBedroom(e.target.value)} >7</option>
                     </select>
                 </div>
 

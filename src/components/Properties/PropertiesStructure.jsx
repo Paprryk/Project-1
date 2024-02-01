@@ -16,14 +16,14 @@ function PropertiesStructure(props) {
                     <div className="card-body">
                         <h4>£{Number(props.price).toLocaleString("EN-UK")}</h4><br />
                         <img id="House" src={props.image} width={"70%"}></img>
-                        <button style={{ margin:"10px"}} className="btn btn-primary" type="submit" onClick={() => navigate("/Bookings/" + props.id)}>
+                        <button style={{ margin:"10px"}} className="btn btn-primary" type="submit" onClick={() => navigate("/Booking/" + props.id)}>
                                 Bookings
                             </button>
                         <div className="card-text">
                             Address: {props.address}<br />
                             City: {props.city}<br />
                             Type: {props.type}<br />
-                            Bedrooms: {props.bedrooms}<br />
+                            Bedrooms: {props.bedroom}<br />
                             Bathroom: {props.bathroom}<br />
                             Garden: {props.garden}<br />
                             Status: {props.status}<br />
@@ -45,14 +45,14 @@ else {
                 <div className="card-body">
                     <h4>£{Number(props.price).toLocaleString("EN-UK")}</h4><br />
                     <img id="House" src={props.image} width={"70%"}></img>
-                    <button disabled={true} style={{ margin:"10px"}} className="btn btn-primary" type="submit" onClick={() => navigate("/Bookings/" + props.id)}>
+                    <button disabled={true} style={{ margin:"10px"}} className="btn btn-primary" type="submit" onClick={() => navigate("/Booking/" + props.id)}>
                             Bookings
                         </button>
                     <div className="card-text">
                         Address: {props.address}<br />
                         City: {props.city}<br />
                         Type: {props.type}<br />
-                        Bedrooms: {props.bedrooms}<br />
+                        Bedrooms: {props.bedroom}<br />
                         Bathroom: {props.bathroom}<br />
                         Garden: {props.garden}<br />
                         Status: {props.status}<br />
@@ -71,7 +71,7 @@ PropertiesStructure.propTypes = {
     type: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    bedrooms: PropTypes.string.isRequired,
+    bedroom: PropTypes.string.isRequired,
     bathroom: PropTypes.string.isRequired,
     garden: PropTypes.string.isRequired,
     status: PropTypes.string.isRequired,
