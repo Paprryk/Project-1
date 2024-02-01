@@ -4,25 +4,26 @@ import { useState } from "react";
 // import Home from './Home';
 
 function AddSeller(props) {
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
 
     function CheckSeller() {
 
 
-        axios.get("http://localhost:8080/seller/get").then(response => {
+        axios.get("http://localhost:8081/seller/get").then(response => {
             console.log(response)
             for (const seller of response.data) {
-                if (seller.firstname.toLowerCase() === firstname.toLowerCase() && seller.lastname.toLowerCase() === lastname.toLowerCase()) {
+                if (seller.firstName.toLowerCase() === firstName.toLowerCase() && seller.lastName.toLowerCase() === lastName.toLowerCase()) {
                          alert("Seller already exists")
                          return;
                 }
             }
 
-axios.post("http://localhost:8080/seller/create", { firstname, lastname })
+axios.post("http://localhost:8081/seller/create", { firstName, lastName })
             .then(response => {
-                setFirstname("");
-                setLastname("");
+                console.log(response.data);
+                setFirstName("");
+                setLastName("");
                 props.getSellers();
             })
             .catch(err => console.error(err))
@@ -43,8 +44,8 @@ axios.post("http://localhost:8080/seller/create", { firstname, lastname })
                 id="firstName"
                 firstname="firstname"
                 type="text"
-                value={firstname}
-                onChange={e => setFirstname(e.target.value)}
+                value={firstName}
+                onChange={e => setFirstName(e.target.value)}
                 required
             />
             <br /><label htmlFor="lastName">Last Name</label>
@@ -52,8 +53,8 @@ axios.post("http://localhost:8080/seller/create", { firstname, lastname })
                 id="lastName"
                 lastname="lastname"
                 type="text"
-                value={lastname}
-                onChange={e => setLastname(e.target.value)}
+                value={lastName}
+                onChange={e => setLastName(e.target.value)}
                 required
             />
             <div className="mt-2">
