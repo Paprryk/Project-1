@@ -16,7 +16,7 @@ function SearchProperty() {
     const [filterBathroom, setFilterBathroom] = useState("")
 
     function getProperties() {
-        axios.get("http://localhost:3000/properties")
+        axios.get("http://localhost:8080/property/get")
          .then((response) => { setProperties(response.data) })
          .catch(console.log)
     }

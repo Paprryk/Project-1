@@ -8,7 +8,7 @@ function Sellers() {
 
     function getSellers() {
 
-        axios.get("http://localhost:3000/sellers")
+        axios.get("http://localhost:8080/seller/get")
             .then((response) => { setSellers(response.data) }).catch(console.log)
 
     }

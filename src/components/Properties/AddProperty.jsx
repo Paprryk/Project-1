@@ -20,7 +20,7 @@ function AddProperty() {
 
         e.preventDefault()
 
-        axios.post("http://localhost:3000/properties", { address, type, city, price, bedrooms, bathroom, garden, status, image })
+        axios.post("http://localhost:8080/property/create", { address, type, city, price, bedrooms, bathroom, garden, status, image })
 
             .then(response => {
                 setAddress("");

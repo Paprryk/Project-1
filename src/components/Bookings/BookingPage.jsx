@@ -24,7 +24,7 @@ function BookingPage() {
     }
 
     function getProperties() {
-        axios.get("http://localhost:3000/properties/" + params.id)
+        axios.get("http://localhost:8080/property/get" + params.id)
             .then((response) => { setProperty(response.data) })
             .catch(console.log)
     }

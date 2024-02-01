@@ -9,9 +9,9 @@ function BuyerDisplay(props) {
         console.log("Buyers:", buyer);
         buyerList.push(
             <BuyerStructure
-                key={buyer.firstname + "" + buyer.lastname}
-                firstname={buyer.firstname}
-                lastname={buyer.lastname}
+                key={buyer.firstName + "" + buyer.lastName}
+                firstname={buyer.firstName}
+                lastname={buyer.lastName}
                 id={buyer.id}
             />
         )

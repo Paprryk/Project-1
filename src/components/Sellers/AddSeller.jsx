@@ -10,7 +10,7 @@ function AddSeller(props) {
     function CheckSeller() {
 
 
-        axios.get("http://localhost:3000/sellers").then(response => {
+        axios.get("http://localhost:8080/seller/get").then(response => {
             console.log(response)
             for (const seller of response.data) {
                 if (seller.firstname.toLowerCase() === firstname.toLowerCase() && seller.lastname.toLowerCase() === lastname.toLowerCase()) {
@@ -19,7 +19,7 @@ function AddSeller(props) {
                 }
             }
 
-axios.post("http://localhost:3000/sellers", { firstname, lastname })
+axios.post("http://localhost:8080/seller/create", { firstname, lastname })
             .then(response => {
                 setFirstname("");
                 setLastname("");

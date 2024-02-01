@@ -22,7 +22,7 @@ function AddBooking(props) {
                 }
             }
         
-            axios.post("http://localhost:3000/bookings",{date, time, buyerID, properties: params.id})
+            axios.post("http://localhost:8080/booking/create",{date, time, buyerID, properties: params.id})
                 .then(response => {
                     console.log(response);
                     setDate("");
@@ -34,7 +34,7 @@ function AddBooking(props) {
     }
 
     function getBuyers() {
-        axios.get("http://localhost:3000/buyers")
+        axios.get("http://localhost:8080/buyer/get")
         .then(response=>{
             setBuyers(response.data);
         })
