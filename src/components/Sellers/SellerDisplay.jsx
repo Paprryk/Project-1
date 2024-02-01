@@ -10,9 +10,9 @@ function SellerDisplay(props) {
 
         sellerList.push(
             <Seller
-                key={seller.firstname + " " + seller.lastname}
-                firstname={seller.firstname}
-                lastname={seller.lastname}
+                key={seller.firstName + " " + seller.lastName}
+                firstName={seller.firstName}
+                lastName={seller.lastName}
                 id={seller.id}
             />
         )
