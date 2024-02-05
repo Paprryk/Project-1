@@ -28,6 +28,7 @@ function AddBooking(props) {
                     setDate("");
                     setTime("");
                     setBuyerID();
+                    
                     props.getBookings();
                 }).catch(err => console.error(err))
         })
@@ -46,7 +47,7 @@ function AddBooking(props) {
         console.log("Buyers:", buyer);
         buyerList.push(
             <option value={buyer.id}>
-                {buyer.firstName + buyer.lastName}
+                {buyer.firstName + " " + buyer.lastName}
             </option>
         )
     }
