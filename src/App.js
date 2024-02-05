@@ -31,7 +31,7 @@ function App() {
     <GlobalStyles/>
     <StyledApp>
        <Router>
-        <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#e3f2fd",}} >
+        <nav className="navbar align-content-center " style={{display: "flex",  backgroundColor: "#BDA62D",}} >
           <div><div className="homeimage"></div>
            <Link to='/'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Home</button></Link>
             <Link  to='/buyers'><button type="button" className="btn btn-primary" style={{margin:"10px"}}>Buyers</button></Link>

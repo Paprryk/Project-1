@@ -28,15 +28,15 @@ const params =useParams();
 
     return (
 <div>
-        <button className="btn btn-primary" type="submit"  onClick={(e) => handleClick(e, "For Sale")}>
+        <button className="btn btn-secondary" type="submit"  onClick={(e) => handleClick(e, "For Sale")}>
         For Sale
     </button>
     &nbsp;
-    <button className="btn btn-primary"  type="submit" onClick={(e) => handleClick(e, "Sold")}>
+    <button className="btn btn-warning"  type="submit" onClick={(e) => handleClick(e, "Sold")}>
         Sold
     </button>
     &nbsp;
-    <button className="btn btn-primary" type="submit" onClick={(e) => handleClick(e, "Withdrawn")}>
+    <button className="btn btn-danger" type="submit" onClick={(e) => handleClick(e, "Withdraw")}>
         Withdraw
     </button>    
     </div>    
