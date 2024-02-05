@@ -41,11 +41,11 @@
 
 /***********Styles added by TC**********/
 .homeimage {
-  background: url("../public/royalty-elegant-vintage-crown-svgrepo-com.svg");
+  background: url("../src/images/OIP.jpg");
   background-size: auto;
   background-repeat: no-repeat;
-  height: 10vh;
-  width: 20%;
+  height: 7cm;
+  width: 57%;
   background-position: left;
 
 }
