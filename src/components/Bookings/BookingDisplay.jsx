@@ -13,8 +13,8 @@ function BookingDisplay(props) {
                 time={booking.time}
                 id={booking.id}
                 buyerID={booking.buyerID}
-                firstname={booking.firstName}
-                lastname={booking.lastName}
+                firstName={booking.buyerFirstName}
+                lastName={booking.buyerLastName}
                 getBookings={props.getBookings}
             />
         )
