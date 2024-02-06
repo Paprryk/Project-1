@@ -21,7 +21,7 @@ function BookingDisplay(props) {
     }
 
 return (
-    <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EC97DB", width: "80%" }}>
+    <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EC97DB", width: "80%", color:"white" }}>
         {bookingList} 
   
     </div>
