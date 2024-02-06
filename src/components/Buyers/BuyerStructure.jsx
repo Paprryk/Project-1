@@ -5,7 +5,7 @@ function BuyerStructure(props) {
 
     function deleteBuyer (){
         axios.delete("http://localhost:8085/buyer/delete/" + props.id)
-        .then(response => {props.getBuyers()})
+        .then(response => {props.getBookings()})
         .catch(err => console.error(err))
         }
 
