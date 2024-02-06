@@ -38,7 +38,7 @@ function App() {
             <Link to='/sellers'><button type="button" className="btn btn-dark" style={{margin:"10px"}}>Sellers</button></Link>
             <Link to='/properties'><button type="button" className="btn btn-dark" style={{margin:"10px"}}> Properties</button></Link>
             <Link to='/addpropertiespage'><button type="button" className="btn btn-dark" style={{margin:"10px"}}> Add Property</button></Link>
-            <button onClick={() => themeToggler()} className='btn btn-dark' style={{margin:"10px"}}> Change Theme</button>
+            <button onClick={() => themeToggler()} className='btn btn-light' style={{margin:"10px"}}> Change Theme</button>
             </div>
         </nav>
         <Routes> 
