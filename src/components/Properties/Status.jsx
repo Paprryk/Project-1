@@ -13,7 +13,7 @@ import BookingPage from "../Bookings/BookingPage";
 
 function Status(props) {
 const navigate = useNavigate();
-const params =useParams();
+const params = useParams();
 
     function handleClick(e, status) {
         e.preventDefault()
