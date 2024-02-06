@@ -5,7 +5,7 @@ function BuyerStructure(props) {
 
     function deleteBuyer (){
         axios.delete("http://localhost:8085/buyer/delete/" + props.id)
-        .then(response => {props.getBuyers()})
+        .then(response => {props.getBookings()})
         .catch(err => console.error(err))
         }
 
@@ -13,7 +13,7 @@ function BuyerStructure(props) {
         <div>Buyer: {props.id}
         <div className="row">
             <p className="col"> {props.firstname} {props.lastname}</p>
-            <p><button style={{width: "80px"}}className="btn btn-primary col" onClick={deleteBuyer}>Delete</button></p>
+            <p><button style={{width: "80px"}}className="btn btn-danger col" onClick={deleteBuyer}>Delete</button></p>
         </div>
 </div>
 

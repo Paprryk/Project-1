@@ -14,6 +14,7 @@ function SellerDisplay(props) {
                 firstName={seller.firstName}
                 lastName={seller.lastName}
                 id={seller.id}
+                getSellers={seller.getSellers}
             />
         )
     }
