@@ -57,7 +57,7 @@ function AddBooking(props) {
         e.preventDefault();
         CheckBooking();
     }}>
-        <div  style={{backgroundColor:"#EC97DB"}}>
+        <div className="form-control border-3 border-primary rounded" style={{backgroundColor:"#EC97DB"}}>
             
             <label htmlFor="date">Date</label>
             <input className="form-control border-3 border-primary rounded" style={{width:"250px"}}type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
