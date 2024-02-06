@@ -13,6 +13,7 @@ function BuyerDisplay(props) {
                 firstname={buyer.firstName}
                 lastname={buyer.lastName}
                 id={buyer.id}
+                getBuyers={buyer.getBuyers}
             />
         )
     }
