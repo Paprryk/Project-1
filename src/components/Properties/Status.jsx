@@ -36,7 +36,7 @@ function Status(props) {
                 Sold
             </button>
             &nbsp;
-            <button className="btn btn-danger" value="Withdrawn" type="submit" onClick={(e) => handleClick(e, "Withdrawn")}>
+            <button className="btn btn-danger" type="submit" onClick={(e) => handleClick(e, "Withdrawn")}>
                 Withdraw
             </button>
         </div>
