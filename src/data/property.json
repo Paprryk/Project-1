@@ -24,6 +24,11 @@
       "firstname": "Jordan",
       "lastname": "Harrison",
       "id": 5
+    },
+    {
+      "firstname": "te",
+      "lastname": "this",
+      "id": 6
     }
   ],
   "sellers": [
@@ -117,7 +122,7 @@
       "bedrooms": "2",
       "bathroom": "1",
       "garden": "Yes",
-      "status": "Sold",
+      "status": "For Sale",
       "image": "https://lid.zoocdn.com/645/430/72297fb46e5fac5458e25f786815c6d1dd706bae.jpg:p",
       "id": 6
     }

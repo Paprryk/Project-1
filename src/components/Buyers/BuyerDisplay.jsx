@@ -9,16 +9,17 @@ function BuyerDisplay(props) {
         console.log("Buyers:", buyer);
         buyerList.push(
             <BuyerStructure
-                key={buyer.firstname + "" + buyer.lastname}
-                firstname={buyer.firstname}
-                lastname={buyer.lastname}
+                key={buyer.firstName + "" + buyer.lastName}
+                firstname={buyer.firstName}
+                lastname={buyer.lastName}
                 id={buyer.id}
+                getBuyers={props.getBuyers}
             />
         )
     }
 
 return (
-    <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "80%" }}>
+    <div class="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#ec97db", width: "80%" }}>
         {buyerList}
     </div>
 )

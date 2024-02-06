@@ -14,7 +14,7 @@ function PropertiesDisplay(props) {
     const [filterBathroom, setFilterBathroom] = useState("")
 
     function getProperties() {
-        axios.get("http://localhost:3000/properties")
+        axios.get("http://localhost:8085/property/get")
             .then((response) => { setProperties(response.data) })
             .catch(console.log)
     }
@@ -32,7 +32,7 @@ function PropertiesDisplay(props) {
         if (Number(filterMinPrice) && Number(filterMinPrice) > Number(property.price)) continue;
         if (Number(filterMaxPrice) && Number(filterMaxPrice) < Number(property.price)) continue;
         if (Number(filterBathroom) > Number(property.bathroom)) continue;
-        if (Number(filterBedroom) > Number(property.bedrooms)) continue;
+        if (Number(filterBedroom) > Number(property.bedroom)) continue;
         if (filterGarden && filterGarden !== property.garden) continue;
         console.log("Property:", property)
 
@@ -43,7 +43,7 @@ function PropertiesDisplay(props) {
                 type={property.type}
                 city={property.city}
                 price={property.price}
-                bedrooms={property.bedrooms}
+                bedroom={property.bedroom}
                 bathroom={property.bathroom}
                 garden={property.garden}
                 id={property.id}
@@ -73,7 +73,7 @@ function PropertiesDisplay(props) {
     }
     return (
         <div>
-            <table class="table" className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "100%" }}>
+            <table class="table" className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EC97DB", width: "100%" }}>
                 <tbody>
                     <tr>
                         <td scope="row" >Address<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} /></td>
@@ -100,8 +100,8 @@ function PropertiesDisplay(props) {
                     </tr><br/>
                 </tbody>
             </table>
-            <br/><h4 style={{ color: "#0a69ca" }}>Search Results</h4><br/>
-            <div className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#e3f2fd", width: "100%" }}>
+            <br/><h4 style={{ color: "#EE3BE3", marginLeft: "20px" }}>Search Results</h4><br/>
+            <div className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EC97DB", width: "100%" }}>
             {propertyList}
             </div>
         </div >
