@@ -6,7 +6,7 @@ function Home() {
     return (
 
         <div><br /><br />
-            <h1 style={{ textAlign: "center", color: "#EE3BE3" }}>"Kings and Queen Estate Agent"</h1>
+            <h1 style={{ textAlign: "center", color: "#EE3BE3" }}>"Kings and Queen Real Estate"</h1>
             <div>
             <br /><br /><div className="location"></div>
             <a href="https://maps.app.goo.gl/uSq8HAktiNPYP2Co6">

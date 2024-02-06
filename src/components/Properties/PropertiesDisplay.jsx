@@ -73,7 +73,7 @@ function PropertiesDisplay(props) {
     }
     return (
         <div>
-            <table class="table" className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EE3BE3", width: "100%" }}>
+            <table class="table" className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EC97DB", width: "100%" }}>
                 <tbody>
                     <tr>
                         <td scope="row" >Address<br /><input className="border-3 border-primary rounded" style={{width: "188px", height: "37px"}} name="property.address" type="text" value={filterAdd} onChange={handleChangeAddress} /></td>
@@ -101,7 +101,7 @@ function PropertiesDisplay(props) {
                 </tbody>
             </table>
             <br/><h4 style={{ color: "#EE3BE3" }}>Search Results</h4><br/>
-            <div className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EE3BE3", width: "100%" }}>
+            <div className="border border-primary p-2 mb-2 border-4" style={{ backgroundColor: "#EC97DB", width: "100%" }}>
             {propertyList}
             </div>
         </div >
