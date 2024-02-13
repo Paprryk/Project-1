@@ -19,7 +19,7 @@ function AddSeller(props) {
                 }
             }
 
-axios.post("http://localhost:8085/seller/create", { firstName, lastName })
+        axios.post("http://localhost:8085/seller/create", { firstName, lastName })
             .then(response => {
                 console.log(response.data);
                 setFirstName("");
